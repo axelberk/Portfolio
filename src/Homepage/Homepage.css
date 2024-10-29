@@ -10,11 +10,17 @@
     flex-direction: row;
 }
 
-.intro-section h2 {
+.intro-text {
     display: flex;
-    align-self: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding: 0 20px;
 }
 
 .pfp {
-    border-radius: 20px;
-}
+    max-width: 350px;
+    align-self: center;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
