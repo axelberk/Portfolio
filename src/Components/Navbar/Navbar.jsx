@@ -3,7 +3,20 @@ import "./Navbar.css"
 
 const Navbar = () => {
     return (
-        <div className="Navbar">Navbar</div>
+        <div className="Navbar">
+            <a href="">AB</a>
+            <div className="page-routes">
+                <a href="/">Home</a>|
+                <a href="/">Projects</a>|
+                <a href="/">Contact</a>
+            </div>
+            
+            <div className="ext-links">
+                <a href="https://github.com/axelberk" target="_blank"><img src="github-mark.png" alt=""/></a>
+                <a href="https://www.linkedin.com/in/axel-bergquist-360940114/" target="_blank"><img src="LI-In-Bug.png" alt="" /></a>
+            </div>
+        </div>
+        
     )
     
 }

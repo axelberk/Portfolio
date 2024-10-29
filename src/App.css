@@ -1,10 +1,16 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  height: 100%;
+  width: 100%;
   text-align: center;
+  
 }
 
-html {
+.App {
+  display: flex;
+}
+
+html, body {
   padding: 0;
+  background-color: #001F3F;
 }
 
