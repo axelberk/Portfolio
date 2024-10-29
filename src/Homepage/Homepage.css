@@ -1,0 +1,20 @@
+.Homepage {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 200px;
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.intro-section h2 {
+    display: flex;
+    align-self: flex-end;
+}
+
+.pfp {
+    border-radius: 20px;
+}

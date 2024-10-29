@@ -7,10 +7,17 @@
 
 .App {
   display: flex;
+  flex-direction: column;
+}
+
+.pfp {
+  max-width: 350px;
+  align-self: center;
+  margin-top: 10px;
 }
 
 html, body {
   padding: 0;
-  background-color: #001F3F;
+  background-color: #629584;
 }
 
