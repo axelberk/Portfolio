@@ -1,0 +1,7 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    height: 200px;
+    border: 1px solid black;
+}
