@@ -18,6 +18,18 @@
     padding: 0 20px;
 }
 
+.intro-text a {
+    text-decoration: none;
+}
+
+.projects-button {
+    width: 200px;
+    background-color: #E2F1E7;
+    color: black;
+    font: inherit;
+    font-weight: 500;
+}
+
 .pfp {
     max-width: 350px;
     align-self: center;
