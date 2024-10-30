@@ -7,7 +7,6 @@ const Navbar = () => {
             <a href="">A.B</a>
             <div className="page-routes">
                 <a href="/">Home</a>|
-                <a href="/">About</a>|
                 <a href="/">Projects</a>|
                 <a href="/">Contact</a>
             </div>

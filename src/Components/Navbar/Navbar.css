@@ -8,7 +8,7 @@
     height: 60px;
     border: 1px solid black;
     color: black;
-    padding: 12px 200px;
+    
     box-sizing: border-box;
     font-size: 22px;
 }
@@ -16,6 +16,7 @@
 .Navbar a {
     text-decoration: none;
     color: black;
+    padding-left: 6px;
 }
 
 .Navbar img {
