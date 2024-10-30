@@ -2,13 +2,13 @@
   height: 100%;
   width: 100%;
   text-align: center;
-  
 }
 
 .App {
   display: flex;
   flex-direction: column;
   padding: 0px 150px;
+  margin-top: 60px;
 }
 
 html, body {
