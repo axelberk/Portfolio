@@ -1,3 +1,35 @@
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
 .project-img {
     max-width: 100%;
+    border-radius: 10px;
+}
+
+.img-container {
+    position: relative;
+    transition: transform 150ms;
+    
+}
+
+.img-overlay {
+    position: absolute;
+    inset: 0px;
+    background-color: #26262699;
+    border-radius: 10px;
+}
+
+
+.project:hover .img-container{
+    transform: scale(1.05);
 }
