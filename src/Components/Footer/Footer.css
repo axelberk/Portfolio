@@ -8,4 +8,9 @@
     bottom: 0;
     left: 0;
     box-shadow: 1px 1px 3px black;
+    z-index: 1;
+}
+
+.footer h4 {
+    font-weight: 500;
 }

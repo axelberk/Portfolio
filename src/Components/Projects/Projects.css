@@ -3,16 +3,20 @@
     justify-content: space-between;
     flex-direction: column;
     gap: 30px;
+    position: relative;
+    margin-bottom: 100px;
 }
 
 .project {
     overflow: hidden;
     border-radius: 10px;
+    position: relative;
+    color: white;
 }
 
 
 .project-img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -29,6 +33,15 @@
     border-radius: 10px;
 }
 
+.project-text {
+    position:absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    text-align: left;
+}
 
 .project:hover .img-container{
     transform: scale(1.05);
