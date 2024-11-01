@@ -36,10 +36,3 @@
     gap: 10px;
 }
 
-.ext-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-}
