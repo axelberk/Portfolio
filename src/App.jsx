@@ -5,6 +5,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Homepage from './Homepage/Homepage'  
 import Projects from './Components/Projects/Projects'
 import Footer from './Components/Footer/Footer'
+import Contact from './Components/Contact/Contact'
 import '@mui/material'
 
 
@@ -18,7 +19,7 @@ function App() {
           
           <Homepage />
           <Projects />
-        
+          <Contact />
       </div>
       
       <Footer />
