@@ -1,5 +1,7 @@
 .Contact {
     height: 100px;
     background-color: #E2F1E7;
-    
+    margin-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px black;
 }

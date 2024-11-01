@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Component } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
@@ -16,13 +17,13 @@ function App() {
       <Navbar/>
       
       <div className='App'>
-          
           <Homepage />
           <Projects />
           <Contact />
       </div>
       
       <Footer />
+      
     </BrowserRouter>
     
   )
