@@ -29,7 +29,7 @@ const Projects = () => {
             </article>
             <article className="project">
                 <div className="img-container">
-                    <img src="pwgen2..png" alt="" className="project-img"/>
+                    <img src="pwgen2.png" alt="" className="project-img"/>
                     <div className="img-overlay"></div>
                 </div>
                 <div className="project-text">
