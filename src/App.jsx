@@ -17,13 +17,18 @@ function App() {
       <Navbar/>
       
       <div className='App'>
+        <section id='home'>
           <Homepage />
+        </section>
+        <section id='projects'>
           <Projects />
+        </section>
+        <section id='contact'>
           <Contact />
+        </section>
+          
       </div>
-      
       <Footer />
-      
     </BrowserRouter>
     
   )

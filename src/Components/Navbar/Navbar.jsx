@@ -1,5 +1,5 @@
 import React from "react"
-import { Component, Link } from "react"
+import { Link } from "react-scroll"
 import { Route, Router, Routes } from "react-router-dom"
 import "./Navbar.css"
 import Projects from "../Projects/Projects"
@@ -9,12 +9,12 @@ import Homepage from "../../Homepage/Homepage"
 const Navbar = () => {
     return (
         <div className="Navbar">
-            <a href="">
+            <a href="#">
                 A.B</a>
             <div className="page-routes">
-                <a href="/">Home</a>|
-                <a href="/">Projects</a>|
-                <a href="/">Contact</a>
+                <Link to="home" smooth={true} duration={500} className="link">Home</Link>|
+                <Link to="projects" smooth={true} duration={500} className="link">Projects</Link>|
+                <Link to="contact" smooth={true} duration={500} className="link">Contact</Link>
             </div>
             
             <div className="ext-links">

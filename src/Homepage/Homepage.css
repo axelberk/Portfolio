@@ -9,6 +9,10 @@
     box-shadow: 1px 1px 2px black;
 }
 
+.Homepage h1 {
+    font-size: 32px;
+}
+
 .intro-section {
     display: flex;
     flex-direction: row;
