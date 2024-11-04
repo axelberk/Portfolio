@@ -8,7 +8,7 @@ const Homepage = () => {
                 <img className='pfp' src="me.jpg" alt="" />
                 <div className="intro-text">
                     <h1>Axel Bergquist - Web Developer</h1>
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, a reprehenderit omnis dolores temporibus tenetur? Nam ducimus aspernatur, quam cumque alias reiciendis ea, rem nisi dicta quasi iusto itaque consequuntur!.</h2>
+                    <h2>Gör om projects till grid med mindre bilder, sen kan man klicka på "More" och läsa mer?</h2>
                     <h3> </h3>
                     <div className="chips-container">
                         <div className="tooltip-container">

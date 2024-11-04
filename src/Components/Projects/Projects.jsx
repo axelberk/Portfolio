@@ -15,16 +15,20 @@ const Projects = () => {
                     <p>An app that displays all the worlds countries with basic facts.</p>
                     <Button href="https://countryfactbase.netlify.app/" target="_blank" variant="contained" sx={{width:"200px", backgroundColor:"#E2F1E7", color:"black"}}>View app</Button>
                 </div>
+                {/* <div className="made-with">
+                    <h3>Made with:</h3>
+                    <img src="react-logo.png" alt="" style={{maxWidth: "50px"}}/>
+                </div> */}
             </article>
             <article className="project">
                 <div className="img-container">
-                    <img src="flagproject1.png" alt="" className="project-img"/>
+                    <img src="spotifyclone1.png" alt="" className="project-img"/>
                     <div className="img-overlay"></div>
                 </div>
                 <div className="project-text">
                     <h2>Spotify Clone</h2>
                     <p>Made with the Spotify API, this app has basic functionality displaying your playlists etc.</p>
-                    <Button variant="contained" target="_blank" sx={{width: "200px", backgroundColor:"#E2F1E7", color:"black"}}>View app</Button>
+                    <Button href="https://axelspotify.netlify.app/" variant="contained" target="_blank" sx={{width: "200px", backgroundColor:"#E2F1E7", color:"black"}}>View app</Button>
                 </div>
             </article>
             <article className="project">
