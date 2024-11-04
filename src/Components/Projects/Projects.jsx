@@ -24,7 +24,7 @@ const Projects = () => {
                 <div className="project-text">
                     <h2>Spotify Clone</h2>
                     <p>Made with the Spotify API, this app has basic functionality displaying your playlists etc.</p>
-                    <Button variant="contained"  target="_blank" sx={{width: "200px", backgroundColor:"#E2F1E7", color:"black"}}>View app</Button>
+                    <Button variant="contained" target="_blank" sx={{width: "200px", backgroundColor:"#E2F1E7", color:"black"}}>View app</Button>
                 </div>
             </article>
             <article className="project">

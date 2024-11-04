@@ -64,9 +64,42 @@
     border: 1px solid black
 }
 
+.tooltip-container {
+    position: relative;
+    display: flex;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
 .stack-logo {
     width: 100px;
     max-height: 100px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.stack-logo:hover {
+    transform: scale(1.1);
 }
 
 .fontawesome-icon {

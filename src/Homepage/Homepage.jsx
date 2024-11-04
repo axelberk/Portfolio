@@ -9,14 +9,44 @@ const Homepage = () => {
                 <div className="intro-text">
                     <h1>Axel Bergquist - Web Developer</h1>
                     <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, a reprehenderit omnis dolores temporibus tenetur? Nam ducimus aspernatur, quam cumque alias reiciendis ea, rem nisi dicta quasi iusto itaque consequuntur!.</h2>
-                    <h3>Stacks: </h3>
+                    <h3> </h3>
                     <div className="chips-container">
-                        <img src="react-logo.png" alt="" className="stack-logo"/>
-                        <img src="JavaScript-logo.png" alt="" className="stack-logo"/>
-                        <img src="HTML5_logo.svg" alt="" className="stack-logo"/>
-                        <img src="CSS3_logo.svg" alt="" className="stack-logo"/>
-                        <img src="Npm-logo.svg" alt="" className="stack-logo"/>
-                        <img src="MongoDB_Logo.svg" alt="" className="stack-logo"/>
+                        <div className="tooltip-container">
+                            <img src="react-logo.png" alt="" className="stack-logo"/>
+                            <span className="tooltip-text">React - Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, esse!</span>
+                        </div>
+                        
+                        <div className="tooltip-container">
+                            <img src="JS-logo2.png" alt="" className="stack-logo"/>
+                            <span className="tooltip-text">JavaScript</span>
+                        </div>
+                        
+                        <div className="tooltip-container">
+                            <img src="HTML5_logo.svg" alt="" className="stack-logo"/>
+                            <span className="tooltip-text">HTML</span>
+                        </div>
+                        
+                        <div className="tooltip-container">
+                            <img src="CSS3_logo.svg" alt="" className="stack-logo"/>
+                            <span className="tooltip-text">CSS</span>
+                        </div>
+                        
+                        <div className="tooltip-container">
+                            <img src="Git-Icon.png" alt="" className="stack-logo"/>
+                            <span className="tooltip-text">Git</span>
+                        </div>
+                        
+                        <div className="tooltip-container">
+                            <img src="Npm-logo.svg" alt="" className="stack-logo"/>
+                            <span className="tooltip-text">NPM</span>
+                        </div>
+                        
+                        <div className="tooltip-container">
+                            <img src="MongoDB_Logo.svg" alt="" className="stack-logo"/>
+                            <span className="tooltip-text">MongoDB</span>  
+                        </div>
+                        
+                        
                         {/* <div class="chip">Typescript</div> */}
                         {/* <div class="chip">Firebase</div> */}
                     </div>
