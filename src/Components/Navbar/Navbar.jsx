@@ -2,9 +2,6 @@ import React from "react"
 import { Link } from "react-scroll"
 import { Route, Router, Routes } from "react-router-dom"
 import "./Navbar.css"
-import Projects from "../Projects/Projects"
-import Contact from "../Contact/Contact"
-import Homepage from "../../Homepage/Homepage"
 
 const Navbar = () => {
     return (
