@@ -16,13 +16,7 @@ const Navbar = () => {
                 <Link to="projects" smooth={true} duration={500} className="link">Projects</Link>|
                 <Link to="contact" smooth={true} duration={500} className="link">Contact</Link>
             </div>
-            
-            
-            <Routes>
-                <Route path="/" element=""/>
-                <Route path="/projects" element={<Projects/>}/>
-                <Route path="/contact" element={<Contact />} />
-            </Routes>
+        
         </div>
         
     )

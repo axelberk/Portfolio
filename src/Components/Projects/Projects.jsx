@@ -1,7 +1,14 @@
 import "./Projects.css"
 import { Button, Link    } from "@mui/material"
+import { useNavigate } from "react-router-dom"
 
 const Projects = () => {
+    const navigate = useNavigate()
+
+    const handleReadMore = (route) => {
+        navigate(route)
+    }
+
     return (
         <div className="projects-page">
             <h1>Projects</h1>
@@ -15,7 +22,7 @@ const Projects = () => {
                     <div className="project-text">
                         <h2>Country Facts</h2>
                         <p>An app that displays all the worlds countries with basic facts.</p>
-                        <Button href="https://countryfactbase.netlify.app/" target="_blank" variant="contained" sx={{width:"200px", backgroundColor:"#E2F1E7", color:"black"}}>View app</Button>
+                        <Button onClick={() => handleReadMore("/project/countryfacts")} variant="contained" sx={{width:"200px", backgroundColor:"#E2F1E7", color:"black"}}>Read more</Button>
                     </div>
                 </article>
                 <article className="project">
@@ -25,8 +32,8 @@ const Projects = () => {
                     </div>
                     <div className="project-text">
                         <h2>Spotify Clone</h2>
-                        <p>Made with the Spotify API, this app has basic functionality displaying your playlists etc.</p>
-                        <Button href="https://axelspotify.netlify.app/" variant="contained" target="_blank" sx={{width: "200px", backgroundColor:"#E2F1E7", color:"black"}}>View app</Button>
+                        <p>With basic functionality.</p>
+                        <Button onClick={() => handleReadMore("/project/spotifyclone")} variant="contained" sx={{width: "200px", backgroundColor:"#E2F1E7", color:"black"}}>Read more</Button>
                     </div>
                 </article>
                 <article className="project">
@@ -36,8 +43,8 @@ const Projects = () => {
                     </div>
                     <div className="project-text">
                         <h2>Password Generator</h2>
-                        <p>A random password generator. Select up to four different criteria with correlating password strength indicator.</p>
-                        <Button href="https://randompw-gen.netlify.app/" variant="contained" target="_blank" sx={{width:"200px", backgroundColor:"#E2F1E7", color:"black"}}>View app</Button>
+                        <p>A random password generator.</p>
+                        <Button onClick={() => handleReadMore("/project/pwgen")} variant="contained" sx={{width:"200px", backgroundColor:"#E2F1E7", color:"black"}}>Read more</Button>
                     </div>
                 </article>
                 <article className="project">
@@ -48,7 +55,7 @@ const Projects = () => {
                     <div className="project-text">
                         <h2>Advice Generator</h2>
                         <p>Not sure what to put here yet.</p>
-                        <Button variant="contained" href="https://randomadvice-gen.netlify.app/" target="_blank" sx={{width:"200px", backgroundColor:"#E2F1E7", color:"black"}}>View app</Button>
+                        <Button onClick={() => handleReadMore("/project/advicegen")} variant="contained" sx={{width:"200px", backgroundColor:"#E2F1E7", color:"black"}}>Read more</Button>
                     </div>
                 </article>
             </div>
