@@ -1,6 +1,12 @@
 .countryfacts {
     height: 100%;
-    
+    display: flex;
+    flex-direction: column;
+}
+
+.countryfacts img {
+    margin-bottom: 30px;
+
 }
 
 .projectpage-img {
@@ -9,5 +15,25 @@
 
 .projectpage-s {
     width: 300px;
-    align-self:flex-start;
+}
+
+.s-container {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    gap: 20px;
+}
+
+
+.stacks-used {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.chip {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
 }
