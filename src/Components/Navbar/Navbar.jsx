@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <div className="Navbar">
             <a href="#">
-                A.B</a>
+                Axel Bergquist</a>
             <div className="page-routes">
                 <Link to="top" smooth={true} duration={500} className="link" onClick={() => window.scrollTo({top: 0, behavior:"smooth"})}>Home</Link>|
                 <Link to="projects" smooth={true} duration={500} className="link">Projects</Link>|

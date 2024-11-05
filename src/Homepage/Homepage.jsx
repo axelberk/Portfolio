@@ -7,7 +7,7 @@ const Homepage = () => {
             <div className='intro-section'>
                 <img className='pfp' src="me.jpg" alt="" />
                 <div className="intro-text">
-                    <h1>Axel Bergquist - Web Developer</h1>
+                    <h1>Web Developer</h1>
                     <h2>Gör om projects till grid med mindre bilder, sen kan man klicka på "More" och läsa mer?</h2>
                     <h3> </h3>
                     <div className="chips-container">
