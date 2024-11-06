@@ -47,12 +47,12 @@ function App() {
           />}
            />
           <Route 
-          path='/project/spotifyclone' 
+          path='/projects/spotifyclone' 
           element={<ProjectDetail 
             title="Spotify Clone" 
-            description="A clone with basic functionality."
-            mainImage="/spotifyclone2.png"
-            secondImage="/spotifyclone3.png"
+            description="A clone with basic functionality. Can use on phone etc etc."
+            mainImage="/spotifyclone1.png"
+            secondImage="/spotifyclone2.png"
             stack={["React", "Spotify API", "JavaScript"]}
         />} 
     />
