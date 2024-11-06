@@ -1,12 +1,19 @@
 import React from "react"
 import "./CountryFacts.css"
 import { Button } from "@mui/material"
+import { useNavigate } from "react-router-dom"
 
     const CountryFacts = () => {
+        const navigate = useNavigate()
+
+        const handleBackClick = () => {
+            navigate("/")
+        }
+
         return (
             <div className="countryfacts">
                 <h1>Country Facts</h1>
-                <Button to="/">Back</Button>
+                <Button onClick={handleBackClick} variant="contained" sx={{width:"100px", backgroundColor:"#E2F1E7", color:"black"}}>Back</Button>
                 <img src="/flagproject2.png" alt="" className="projectpage-img"/>
                 <div className="s-container">
                     <img src="/flagproject3.png" alt="" className="projectpage-s"/>
