@@ -33,6 +33,7 @@ const Navbar = () => {
             <a href="#">Axel Bergquist</a>
             <div className="page-routes">
                 <span onClick={() => handleNavClick("top")} className="link">Home</span>|
+                <span onClick={() => handleNavClick("about")} className="link">About</span>|
                 <span onClick={() => handleNavClick("projects")} className="link">Projects</span>|
                 <span onClick={() => handleNavClick("contact")} className="link">Contact</span>
             </div>

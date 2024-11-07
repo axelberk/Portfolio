@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Homepage from "./Homepage/Homepage";
+import About from "./Components/About/About";
 import Projects from "./Components/Projects/Projects";
 import Footer from "./Components/Footer/Footer";
 import Contact from "./Components/Contact/Contact";
@@ -21,6 +22,9 @@ function App() {
               <>
                 <section id="home">
                   <Homepage />
+                </section>
+                <section id="about">
+                  <About />
                 </section>
                 <section id="projects">
                   <Projects />
