@@ -1,5 +1,4 @@
 import "./HomePage.css"
-import { Button } from "@mui/material"
 
 const Homepage = () => {
     return (
@@ -13,7 +12,7 @@ const Homepage = () => {
                     <div className="chips-container">
                         <div className="tooltip-container">
                             <img src="react-logo.png" alt="" className="stack-logo"/>
-                            <span className="tooltip-text">React - Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, esse!</span>
+                            <span className="tooltip-text">React</span>
                         </div>
                         
                         <div className="tooltip-container">

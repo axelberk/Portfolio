@@ -41,6 +41,8 @@ function App() {
                 mainImage="/flagproject2.png"
                 secondImage="/flagproject3.png"
                 stack={["React", "JavaScript", "HTML", "CSS", "Rest API"]}
+                projectLink="https://countryfactbase.netlify.app/"
+                projectGithub="https://github.com/axelberk/flagproject"
               />
             }
           />
@@ -53,6 +55,8 @@ function App() {
                 mainImage="/spotifyclone1.png"
                 secondImage="/spotifyclone2.png"
                 stack={["React", "Spotify API", "JavaScript"]}
+                projectLink="https://axelspotify.netlify.app/"
+                projectGithub="https://github.com/axelberk/spotifyclone"
               />
             }
           />
@@ -65,6 +69,9 @@ function App() {
                 mainImage="/pw-gen1.png"
                 secondImage="/pwgen3.png"
                 stack={["JavaScript", "HTML", "CSS"]}
+                projectLink="https://randompw-gen.netlify.app/"
+                projectGithub="https://github.com/axelberk/pwgen"
+                
               />
             }
           />
@@ -77,6 +84,8 @@ function App() {
                 mainImage="/advicegen2.png"
                 secondImage="/advicegen3.png"
                 stack={["JavaScript", "HTML", "CSS"]}
+                projectLink="https://randomadvice-gen.netlify.app/"
+                projectGithub="https://github.com/axelberk/advicegen"
               />
             }
           />

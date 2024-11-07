@@ -1,9 +1,9 @@
 import React from "react"
 import "./ProjectDetail.css"
-import { Button } from "@mui/material"
+import { Button, Link } from "@mui/material"
 import { useNavigate } from "react-router-dom"
 
-    const ProjectDetail = ({title, description, mainImage, secondImage, stack}) => {
+    const ProjectDetail = ({title, description, mainImage, secondImage, stack, projectLink, projectGithub}) => {
         const navigate = useNavigate()
 
         const handleBackClick = () => {
@@ -24,6 +24,10 @@ import { useNavigate } from "react-router-dom"
                             {stack.map((tech, index) => {
                                 <div key={index} className="chip">{tech}</div>
                             })}
+                        </div>
+                        <div className="project-links">
+                            <Button href={projectLink} variant="contained" target="_blank" sx={{width:"100px", backgroundColor:"#E2F1E7", color:"black"}}>Try it</Button>
+                            <Button href={projectGithub} variant="contained" target="_blank" sx={{width:"100px", backgroundColor:"#E2F1E7", color:"black"}}>Github</Button>
                         </div>
                     </div>
                 </div>
