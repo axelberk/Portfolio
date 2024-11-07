@@ -5,9 +5,6 @@ import Homepage from "./Homepage/Homepage";
 import Projects from "./Components/Projects/Projects";
 import Footer from "./Components/Footer/Footer";
 import Contact from "./Components/Contact/Contact";
-import SpotifyClone from "./Components/SpotifyClone/SpotifyClone";
-import PasswordGen from "./Components/PasswordGen/PasswordGen";
-import AdviceGen from "./Components/AdviceGen/AdviceGen";
 import "@mui/material";
 import ProjectDetail from "./Components/ProjectDetail/ProjectDetail";
 
@@ -35,29 +32,54 @@ function App() {
             }
           />
           <Route path="/projects" element={<Projects />} />
-          <Route 
-          path="/projects/countryfacts" 
-          element={<ProjectDetail
-            title="Country Facts"
-            description="Something about this project"
-            mainImage="/flagproject2.png"
-            secondImage="/flagproject3.png"
-            stack={["React", "JavaScript", "HTML", "CSS", "Rest API"]}
-          
-          />}
-           />
-          <Route 
-          path='/projects/spotifyclone' 
-          element={<ProjectDetail 
-            title="Spotify Clone" 
-            description="A clone with basic functionality. Can use on phone etc etc."
-            mainImage="/spotifyclone1.png"
-            secondImage="/spotifyclone2.png"
-            stack={["React", "Spotify API", "JavaScript"]}
-        />} 
-    />
-          <Route path="/projects/pwgen" element={<PasswordGen />} />
-          <Route path="/projects/advicegen" element={<AdviceGen />} />
+          <Route
+            path="/projects/countryfacts"
+            element={
+              <ProjectDetail
+                title="Country Facts"
+                description="Something about this project"
+                mainImage="/flagproject2.png"
+                secondImage="/flagproject3.png"
+                stack={["React", "JavaScript", "HTML", "CSS", "Rest API"]}
+              />
+            }
+          />
+          <Route
+            path="/projects/spotifyclone"
+            element={
+              <ProjectDetail
+                title="Spotify Clone"
+                description="A clone with basic functionality. Can use on phone etc etc."
+                mainImage="/spotifyclone1.png"
+                secondImage="/spotifyclone2.png"
+                stack={["React", "Spotify API", "JavaScript"]}
+              />
+            }
+          />
+          <Route
+            path="/projects/pwgen"
+            element={
+              <ProjectDetail
+                title="Password Generator"
+                description="Password generator with several criteria."
+                mainImage="/pw-gen1.png"
+                secondImage="/pwgen3.png"
+                stack={["JavaScript", "HTML", "CSS"]}
+              />
+            }
+          />
+          <Route
+            path="/projects/advicegen"
+            element={
+              <ProjectDetail
+                title="Advice Generator"
+                description="Random advice generated from an API."
+                mainImage="/advicegen2.png"
+                secondImage="/advicegen3.png"
+                stack={["JavaScript", "HTML", "CSS"]}
+              />
+            }
+          />
         </Routes>
       </div>
 
