@@ -70,7 +70,7 @@ function App() {
               <ProjectDetail
                 title="Password Generator"
                 description="Password generator with several criteria."
-                mainImage="/pw-gen1.png"
+                mainImage="/pwgen-wide.png"
                 secondImage="/pwgen3.png"
                 stack={["JavaScript", "HTML", "CSS"]}
                 projectLink="https://randompw-gen.netlify.app/"
@@ -85,7 +85,7 @@ function App() {
               <ProjectDetail
                 title="Advice Generator"
                 description="Random advice generated from an API."
-                mainImage="/advicegen2.png"
+                mainImage="/advicegen-wide.png"
                 secondImage="/advicegen3.png"
                 stack={["JavaScript", "HTML", "CSS"]}
                 projectLink="https://randomadvice-gen.netlify.app/"
