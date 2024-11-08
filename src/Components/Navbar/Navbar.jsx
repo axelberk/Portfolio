@@ -2,7 +2,6 @@ import React from "react"
 import { Link, scroller } from "react-scroll"
 import { useNavigate, useLocation } from "react-router-dom"
 import "./Navbar.css"
-import { duration } from "@mui/material"
 
 const Navbar = () => {
     const navigate = useNavigate()

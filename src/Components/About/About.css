@@ -1,6 +1,12 @@
 .about-container {
-    height: 100px;
+    height: 100%;
     border: 1px solid black;
-    box-shadow: 1px 1px 1px black;
+    box-shadow: 1px 1px 2px black;
     border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.about-container h1 {
+    text-align: center;
 }
