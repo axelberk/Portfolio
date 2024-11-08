@@ -15,8 +15,10 @@ import LinkIcon from '@mui/icons-material/Link';
 
         return (
             <div className="project-detail">
-                <h1>{title}</h1>
-                <Button onClick={handleBackClick} variant="contained" sx={{width:"70px", backgroundColor:"#E2F1E7", color:"black", borderRadius:"10px"}}><ArrowBackIosNewOutlinedIcon/></Button>
+                <div className="button-and-title">
+                    <Button onClick={handleBackClick} variant="contained" sx={{width:"60px", height:"50px", backgroundColor:"#E2F1E7", color:"black", borderRadius:"10px"}}><ArrowBackIosNewOutlinedIcon/></Button>
+                    <h1>{title}</h1>
+                </div>
                 <img src={mainImage} alt={`&{title} main`} className="projectpage-img"/>
                 <div className="s-container">
                     <img src={secondImage} alt={`${title} secondary`} className="projectpage-s"/>
