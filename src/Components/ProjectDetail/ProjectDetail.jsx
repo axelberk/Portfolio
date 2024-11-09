@@ -3,7 +3,6 @@ import "./ProjectDetail.css"
 import { Button, Link } from "@mui/material"
 import { useNavigate } from "react-router-dom"
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
-import LinkIcon from '@mui/icons-material/Link';
 
 
     const ProjectDetail = ({title, description, mainImage, secondImage, stack, projectLink, projectGithub}) => {
@@ -18,6 +17,7 @@ import LinkIcon from '@mui/icons-material/Link';
                 <div className="button-and-title">
                     <Button onClick={handleBackClick} variant="contained" sx={{width:"60px", height:"50px", backgroundColor:"#E2F1E7", color:"black", borderRadius:"10px"}}><ArrowBackIosNewOutlinedIcon/></Button>
                     <h1>{title}</h1>
+                    <div></div>
                 </div>
                 <img src={mainImage} alt={`&{title} main`} className="projectpage-img"/>
                 <div className="s-container">
@@ -31,8 +31,8 @@ import LinkIcon from '@mui/icons-material/Link';
                             })}
                         </div>
                         <div className="project-links">
-                            <Button href={projectLink} variant="contained" target="_blank" sx={{width:"110px", backgroundColor:"#E2F1E7", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between"}}>Try it<LinkIcon/></Button>
-                            <Button href={projectGithub} variant="contained" target="_blank" sx={{width:"120px", backgroundColor:"#E2F1E7", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between"}}>Github<LinkIcon/></Button>
+                            <Button href={projectLink} variant="contained" target="_blank" sx={{width:"110px", backgroundColor:"#E2F1E7", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between"}}>Try it<i class="fa fa-external-link" aria-hidden="true"></i></Button>
+                            <Button href={projectGithub} variant="contained" target="_blank" sx={{width:"120px", backgroundColor:"#E2F1E7", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between"}}>Github<i class="fa fa-external-link" aria-hidden="true"></i></Button>
                         </div>
                     </div>
                 </div>

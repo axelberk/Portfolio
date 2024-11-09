@@ -1,10 +1,11 @@
 .button-and-title {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 /* .button-and-title h1 {
-    align-self:;
+    align-self:flex-end;
 } */
 
 .project-detail {

@@ -1,7 +1,6 @@
 import "./Projects.css"
 import { Button, Link    } from "@mui/material"
 import { useNavigate } from "react-router-dom"
-import LinkIcon from '@mui/icons-material/Link';
 
 const Projects = () => {
     const navigate = useNavigate()
