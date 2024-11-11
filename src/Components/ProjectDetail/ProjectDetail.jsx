@@ -3,7 +3,7 @@ import "./ProjectDetail.css"
 import { Button } from "@mui/material"
 import { useNavigate } from "react-router-dom"
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
-import { IPhoneX, MacbookPro } from "react-device-frames";
+import { IPhoneX } from "react-device-frames";
 
 
     const ProjectDetail = ({title, description, mainImage, secondImage, stack, projectLink, projectGithub}) => {
@@ -22,8 +22,12 @@ import { IPhoneX, MacbookPro } from "react-device-frames";
                 </div>
                 <img src={mainImage} alt={`&{title} main`} className="projectpage-img"/>
                 <div className="s-container">
-                    <IPhoneX style={{width:"200px"}}>
-                        <img src={secondImage} alt={`${title} secondary`} className="projectpage-s"/>
+                    {/* <div className="project-display-s">
+                        <img src="/IPhone_SE.svg" alt="" className="device-img"/>
+                        <img src={secondImage} alt={`${title} secondary`} className="mobile-img"/>
+                    </div> */}
+                    <IPhoneX className="iphone-container">
+                        <img src={secondImage} alt={`${title} secondary`} className="mobile-img"/>
                     </IPhoneX>
                     <div className="s-text">
                         <p>{description}</p>

@@ -9,20 +9,38 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
 }
 
 .project-detail img {
     margin-bottom: 30px;
-    border-radius: 10px;
+    
 }
 
 .projectpage-img {
     width: 100%;
+    border-radius: 10px;
 }
 
-.projectpage-s {
+.project-display-s {
+    width: 200px;
+    position: relative;
+}
+
+.mobile-img {
     width: 100%;
-    height: auto;
+}
+
+/* .mobile-img {
+    width: 220px;
+    position: absolute;
+    top: 58px;
+    left: 15px;
+    border-radius: 0px;
+} */
+
+.iphone-container {
+    width: 250px;
     position: relative;
 }
 
@@ -37,6 +55,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: relative;
 }
 
 .stacks-used {
