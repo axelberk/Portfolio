@@ -24,24 +24,14 @@
 
 .project-display-s {
     width: 200px;
-    position: relative;
 }
 
 .mobile-img {
-    width: 100%;
+    width: 250px;
 }
-
-/* .mobile-img {
-    width: 220px;
-    position: absolute;
-    top: 58px;
-    left: 15px;
-    border-radius: 0px;
-} */
 
 .iphone-container {
     width: 250px;
-    position: relative;
 }
 
 .s-container {
@@ -55,7 +45,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    position: relative;
+    
 }
 
 .stacks-used {
@@ -75,3 +65,4 @@
     display: flex;
     gap: 10px;
 }
+

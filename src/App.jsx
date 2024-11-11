@@ -42,8 +42,8 @@ function App() {
               <ProjectDetail
                 title="Country Facts"
                 description="Something about this project"
-                mainImage="/flagproject2.png"
-                secondImage="/flagproject3.png"
+                mainImage="/laptop.png"
+                secondImage="/countryphone.png"
                 stack={["React", "JavaScript", "HTML", "CSS", "Rest API"]}
                 projectLink="https://countryfactbase.netlify.app/"
                 projectGithub="https://github.com/axelberk/flagproject"

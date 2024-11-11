@@ -22,14 +22,8 @@ import { IPhoneX } from "react-device-frames";
                 </div>
                 <img src={mainImage} alt={`&{title} main`} className="projectpage-img"/>
                 <div className="s-container">
-                    {/* <div className="project-display-s">
-                        <img src="/IPhone_SE.svg" alt="" className="device-img"/>
-                        <img src={secondImage} alt={`${title} secondary`} className="mobile-img"/>
-                    </div> */}
-                    <IPhoneX className="iphone-container">
-                        <img src={secondImage} alt={`${title} secondary`} className="mobile-img"/>
-                    </IPhoneX>
-                    <div className="s-text">
+                       <img src={secondImage} alt="" className="mobile-img"/>
+                        <div className="s-text">
                         <p>{description}</p>
                         <p>Made with:</p>
                         <div className="stacks-used">
