@@ -10,7 +10,7 @@ const Homepage = () => {
   };
 
   return (
-    <div className="Homepage">
+    <div className="Homepage" id="home">
       <div className="intro-section">
         <img className="pfp" src="me.jpg" alt="" />
         <div className="intro-text">
@@ -61,7 +61,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="about-container">
+      <div className="about-container" id="about">
         <h1>Who am I?</h1>
         <h2>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
@@ -80,7 +80,7 @@ const Homepage = () => {
           CV
         </Button>
       </div>
-      <div className="projects-page">
+      <div className="projects-page" id="projects">
         <h1>Projects</h1>
         <div className="projects-container">
           <article className="project">
@@ -170,7 +170,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="Contact">
+      <div className="Contact" id="contact">
         <h3>Contact & Links</h3>
         <div className="ext-links">
           <a

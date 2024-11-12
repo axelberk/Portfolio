@@ -7,11 +7,10 @@ const Navbar = () => {
     const navigate = useNavigate()
     const location = useLocation()
 
-    const handleNavClick = (/* path, */ section) => {
-        // navigate(path)
+    const handleNavClick = (sectionId) => {
         
         if (location.pathname === "/") {
-            scroller.scrollTo(section, { 
+            scroller.scrollTo(sectionId, { 
                 smooth: true,
                 duration: 500,
                 offset: -70,
@@ -20,7 +19,7 @@ const Navbar = () => {
         } else {
             navigate("/")
             setTimeout(() => {
-                scroller.scrollTo(section, {
+                scroller.scrollTo(sectionId, {
                     smooth: true,
                     duration: 500,
                     offset: -70,
@@ -38,7 +37,7 @@ const Navbar = () => {
                 <span onClick={() => handleNavClick("projects")} className="link">Projects</span>|
                 <span onClick={() => handleNavClick("contact")} className="link">Contact</span>
             </div>
-        </div>
+        </div>  
     )
 
 }
