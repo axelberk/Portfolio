@@ -2,10 +2,10 @@ import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Homepage from "./Homepage/Homepage";
-import About from "./Components/About/About";
-import Projects from "./Components/Projects/Projects";
+// import About from "./Components/About/About";
+// import Projects from "./Components/Projects/Projects";
 import Footer from "./Components/Footer/Footer";
-import Contact from "./Components/Contact/Contact";
+// import Contact from "./Components/Contact/Contact";
 import "@mui/material";
 import ProjectDetail from "./Components/ProjectDetail/ProjectDetail";
 
@@ -24,13 +24,13 @@ function App() {
                   <Homepage />
                 </section>
                 <section id="about">
-                  <About />
+                  {/* <About /> */}
                 </section>
                 <section id="projects">
-                  <Projects />
+                  {/* <Projects /> */}
                 </section>
                 <section id="contact">
-                  <Contact />
+                  {/* <Contact /> */}
                 </section>
               </>
             }

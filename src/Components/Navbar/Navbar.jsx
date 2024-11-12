@@ -7,7 +7,7 @@ const Navbar = () => {
     const navigate = useNavigate()
     const location = useLocation()
 
-    const handleNavClick = (/* path */ section) => {
+    const handleNavClick = (/* path, */ section) => {
         // navigate(path)
         
         if (location.pathname === "/") {

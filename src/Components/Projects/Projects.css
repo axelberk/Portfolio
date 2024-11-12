@@ -1,4 +1,4 @@
-.projects-page {
+/* .projects-page {
     border: 1px solid black;
     padding: 10px;
     border-radius: 10px;
@@ -50,16 +50,6 @@
     text-align: left;
 }
 
-/* .made-with {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    text-align: ;
-}
- */
-
 .project:hover .img-container{
     transform: scale(1.05);
-}
+} */
