@@ -56,8 +56,8 @@ function App() {
               <ProjectDetail
                 title="Spotify Clone"
                 description="A clone with basic functionality. Can use on phone etc etc."
-                mainImage="/spotifyclone1.png"
-                secondImage="/spotifyclone2.png"
+                mainImage="/spotifylaptop.png"
+                secondImage="/spotifyphone.png"
                 stack={["React", "Spotify API", "JavaScript"]}
                 projectLink="https://axelspotify.netlify.app/"
                 projectGithub="https://github.com/axelberk/spotifyclone"
@@ -70,8 +70,8 @@ function App() {
               <ProjectDetail
                 title="Password Generator"
                 description="Password generator with several criteria."
-                mainImage="/pwgen-wide.png"
-                secondImage="/pwgen3.png"
+                mainImage="/passwordlaptop.png"
+                secondImage="/passwordphone.png"
                 stack={["JavaScript", "HTML", "CSS"]}
                 projectLink="https://randompw-gen.netlify.app/"
                 projectGithub="https://github.com/axelberk/pwgen"
@@ -85,8 +85,8 @@ function App() {
               <ProjectDetail
                 title="Advice Generator"
                 description="Random advice generated from an API."
-                mainImage="/advicegen-wide.png"
-                secondImage="/advicegen3.png"
+                mainImage="/advicelaptop.png"
+                secondImage="/advicephone.png"
                 stack={["JavaScript", "HTML", "CSS"]}
                 projectLink="https://randomadvice-gen.netlify.app/"
                 projectGithub="https://github.com/axelberk/advicegen"
