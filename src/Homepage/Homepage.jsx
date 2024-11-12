@@ -44,15 +44,7 @@ const Homepage = () => {
                             <img src="MongoDB_Logo.svg" alt="" className="stack-logo"/>
                             <span className="tooltip-text">MongoDB</span>  
                         </div>
-                        
-                        
-                        {/* <div class="chip">Typescript</div> */}
-                        {/* <div class="chip">Firebase</div> */}
                     </div>
-                    {/* <div></div> */}
-                    {/* <Button variant="contained" className="projects-button" sx={{backgroundColor:"#E2F1E7", color:"black"}}>
-                        <a href="/">See my projects!</a>
-                    </ Button> */}
                 </div>
             </div>
         </div>

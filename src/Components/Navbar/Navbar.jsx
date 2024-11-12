@@ -7,7 +7,9 @@ const Navbar = () => {
     const navigate = useNavigate()
     const location = useLocation()
 
-    const handleNavClick = (section) => {
+    const handleNavClick = (/* path */ section) => {
+        // navigate(path)
+        
         if (location.pathname === "/") {
             scroller.scrollTo(section, { 
                 smooth: true,

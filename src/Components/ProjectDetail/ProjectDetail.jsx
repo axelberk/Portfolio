@@ -3,8 +3,6 @@ import "./ProjectDetail.css"
 import { Button } from "@mui/material"
 import { useNavigate } from "react-router-dom"
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
-import { IPhoneX } from "react-device-frames";
-
 
     const ProjectDetail = ({title, description, mainImage, secondImage, stack, projectLink, projectGithub}) => {
         const navigate = useNavigate()
