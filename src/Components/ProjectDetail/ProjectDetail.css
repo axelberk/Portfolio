@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
+    color: none;
 }
 
 .project-detail img {
@@ -52,6 +52,7 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+    
 }
 
 .chip {
@@ -60,6 +61,8 @@
     padding: 10px;
     font-size: 14px;
     background-color: #66FCF1;
+    color: black;
+    font-weight: 400;
 }
 
 .project-links {

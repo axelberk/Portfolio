@@ -61,6 +61,8 @@ const Homepage = () => {
         </div>
       </div>
 
+      <hr style={{width:"100%"}}/>
+
       <div className="about-container" id="about">
         <h1>Who am I?</h1>
         <h2>
@@ -75,11 +77,12 @@ const Homepage = () => {
           href=""
           variant="contained"
           target="_blank"
-          sx={{ width: "100px", backgroundColor: "#66FCF1", color: "black" }}
+          sx={{ width: "100px", backgroundColor: "#F0F5FF", color: "black", font:"inherit" }}
         >
           CV
         </Button>
       </div>
+      <hr style={{width:"100%"}}/>
       <div className="projects-page" id="projects">
         <h1>Projects</h1>
         <div className="projects-container">
@@ -98,6 +101,7 @@ const Homepage = () => {
                   backgroundColor: "#66FCF1",
                   color: "black",
                   borderRadius: "10px",
+                  font:"inherit"
                 }}
               >
                 Read more
@@ -119,6 +123,7 @@ const Homepage = () => {
                   backgroundColor: "#66FCF1",
                   color: "black",
                   borderRadius: "10px",
+                  font:"inherit"
                 }}
               >
                 Read more
@@ -140,6 +145,7 @@ const Homepage = () => {
                   backgroundColor: "#66FCF1",
                   color: "black",
                   borderRadius: "10px",
+                  font:"inherit"
                 }}
               >
                 Read more
@@ -161,6 +167,7 @@ const Homepage = () => {
                   backgroundColor: "#66FCF1",
                   color: "black",
                   borderRadius: "10px",
+                  font:"inherit"
                 }}
               >
                 Read more
@@ -169,7 +176,7 @@ const Homepage = () => {
           </article>
         </div>
       </div>
-
+      <hr style={{width:"100%"}}/>
       <div className="Contact" id="contact">
         <h3>Contact & Links</h3>
         <div className="ext-links">
