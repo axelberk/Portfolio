@@ -4,11 +4,11 @@
     display: flex;
     justify-content: space-around;
     height: 60px;
-    background-color: #E2F1E7;
+    background-color: #8D99AE;
     bottom: 0;
     left: 0;
-    box-shadow: 1px 1px 2px black;
     z-index: 1;
+    border-radius: 10px;
 }
 
 .footer h4 {
