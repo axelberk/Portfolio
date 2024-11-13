@@ -55,10 +55,11 @@
 }
 
 .chip {
-    border: 1px solid;
+    box-shadow: 1px 1px 2px black;
     border-radius: 10px;
     padding: 10px;
     font-size: 14px;
+    background-color: #66FCF1;
 }
 
 .project-links {
