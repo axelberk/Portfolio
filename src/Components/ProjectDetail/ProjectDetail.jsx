@@ -14,7 +14,7 @@ import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutl
         return (
             <div className="project-detail">
                 <div className="button-and-title">
-                    <Button onClick={handleBackClick} variant="contained" sx={{width:"60px", height:"50px", backgroundColor:"#AFCBFF", color:"black", borderRadius:"10px"}}><ArrowBackIosNewOutlinedIcon/></Button>
+                    <Button onClick={handleBackClick} variant="contained" sx={{width:"60px", height:"50px", backgroundColor:"#FFC107", color:"black", borderRadius:"10px"}}><ArrowBackIosNewOutlinedIcon/></Button>
                     <h1>{title}</h1>
                     <div></div>
                 </div>
@@ -30,8 +30,8 @@ import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutl
                             ))}
                         </div>
                         <div className="project-links">
-                            <Button href={projectLink} variant="contained" target="_blank" sx={{width:"110px", backgroundColor:"#AFCBFF", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit"}}>Try it<i class="fa fa-external-link" aria-hidden="true"></i></Button>
-                            <Button href={projectGithub} variant="contained" target="_blank" sx={{width:"120px", backgroundColor:"#AFCBFF", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit"}}>Github<i class="fa fa-external-link" aria-hidden="true"></i></Button>
+                            <Button href={projectLink} variant="contained" target="_blank" sx={{width:"110px", backgroundColor:"#FFC107", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit"}}>Try it<i class="fa fa-external-link" aria-hidden="true"></i></Button>
+                            <Button href={projectGithub} variant="contained" target="_blank" sx={{width:"120px", backgroundColor:"#FFC107", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit"}}>Github<i class="fa fa-external-link" aria-hidden="true"></i></Button>
                         </div>
                     </div>
                 </div>
