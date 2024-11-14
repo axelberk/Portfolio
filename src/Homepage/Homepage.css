@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background-color: #001F3F;
+    background-color: #f4f2fb;
     margin-top: 50px;
     border-radius: 10px;
     gap: 50px;
@@ -11,14 +11,13 @@
 .Homepage h1 {
     font-size: 32px;
     margin-top: 0;
-    color: #333333;
 }
 
 .intro-section {
     display: flex;
     flex-direction: row;
     border-radius: 10px;
-    background-color: #F5F7FA;
+    background-color: #9c8adf;
     box-shadow: 1px 1px 2px black;
 }
 
@@ -112,7 +111,7 @@
     border-radius: 10px;
     padding: 10px;
     text-align: left;
-    background-color: #F5F7FA;
+    background-color: #a4bdcc;
 }
 
 .about-container h1 {
@@ -122,7 +121,7 @@
 .projects-page {
     padding: 10px;
     border-radius: 10px;
-    background-color: #F5F7FA;
+    background-color: #a4bdcc;
 }
 
 .projects-container {
@@ -181,7 +180,7 @@
     margin-bottom: 100px;
     border-radius: 10px;
     box-shadow: 1px 1px 2px black;
-    background-color: #F5F7FA;
+    background-color: #a4bdcc;
 }
 
 .ext-links {

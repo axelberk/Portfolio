@@ -77,7 +77,7 @@ const Homepage = () => {
           href=""
           variant="contained"
           target="_blank"
-          sx={{ width: "100px", backgroundColor: "#FFC107", color: "black", font:"inherit" }}
+          sx={{ width: "100px", backgroundColor: "#878cbc", color: "black", font:"inherit" }}
         >
           CV
         </Button>
