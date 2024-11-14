@@ -9,8 +9,8 @@
   flex-direction: column;
   padding: 0px 150px;
   margin-top: 60px;
-  color: #F0F5FF; 
-  background-color: #001F3F;
+  color: #656565;
+  background-color: #656565;
 }
 
 h1 {
@@ -23,6 +23,6 @@ section {
 
 html, body {
   padding: 0;
-  background-color: #001F3F;
+  background-color: #656565;
 }
 
