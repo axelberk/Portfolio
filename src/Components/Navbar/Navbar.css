@@ -1,5 +1,5 @@
 .Navbar {
-    background-color: #faca6c;
+    background-color: #089541;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +13,6 @@
     top: 0.5cap;
     box-shadow: 1px 1px 2px black;
     z-index: 1;
-    
     backdrop-filter: blur(10px);
 }
 
