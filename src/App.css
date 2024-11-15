@@ -8,8 +8,8 @@
   display: flex;
   flex-direction: column;
   padding: 0px 150px;
-  margin-top: 60px;
-  color: #ddfdd3;
+  margin-top: 40px;
+  
   
 }
 
@@ -24,5 +24,6 @@ section {
 html, body {
   padding: 0px 1;
   background-color: #061201;
+  color: #ddfdd3;
 }
 

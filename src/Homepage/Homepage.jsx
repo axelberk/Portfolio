@@ -77,7 +77,7 @@ const Homepage = () => {
           href=""
           variant="contained"
           target="_blank"
-          sx={{ width: "100px", backgroundColor: "#27f3b3", color: "black", font:"inherit" }}
+          sx={{ width: "100px", backgroundColor: "#94f877", color: "black", font:"inherit" }}
         >
           CV
         </Button>
@@ -98,7 +98,7 @@ const Homepage = () => {
                 variant="contained"
                 sx={{
                   width: "200px",
-                  backgroundColor: "#27f3b3",
+                  backgroundColor: "#94f877",
                   color: "black",
                   borderRadius: "10px",
                   font:"inherit"
@@ -120,7 +120,7 @@ const Homepage = () => {
                 variant="contained"
                 sx={{
                   width: "200px",
-                  backgroundColor: "#27f3b3",
+                  backgroundColor: "#94f877",
                   color: "black",
                   borderRadius: "10px",
                   font:"inherit"
@@ -142,7 +142,7 @@ const Homepage = () => {
                 variant="contained"
                 sx={{
                   width: "200px",
-                  backgroundColor: "#27f3b3",
+                  backgroundColor: "#94f877",
                   color: "black",
                   borderRadius: "10px",
                   font:"inherit"
@@ -164,7 +164,7 @@ const Homepage = () => {
                 variant="contained"
                 sx={{
                   width: "200px",
-                  backgroundColor: "#27f3b3",
+                  backgroundColor: "#94f877",
                   color: "black",
                   borderRadius: "10px",
                   font:"inherit"
