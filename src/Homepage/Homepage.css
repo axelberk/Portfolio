@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: row;
     border-radius: 10px;
-    background-color: #94f877;
+    
     box-shadow: 1px 1px 2px black;
 }
 
@@ -90,8 +90,8 @@
     width: 100px;
     max-height: 100px;
     transition: all .2s ease-in-out;
-    background-color: #27f3b3;
-    border-radius: 10px;
+    background-color: #94f877;
+    border-radius: 30%;
     padding: 4px;
 }
 
@@ -110,7 +110,7 @@
     border-radius: 10px;
     padding: 10px;
     text-align: left;
-    background-color: #94f877;
+    background-color: #089541;
 }
 
 .about-container h1 {
@@ -120,7 +120,7 @@
 .projects-page {
     padding: 10px;
     border-radius: 10px;
-    background-color: #94f877;
+    background-color: #089541;
 }
 
 .projects-container {
@@ -179,7 +179,7 @@
     margin-bottom: 100px;
     border-radius: 10px;
     box-shadow: 1px 1px 2px black;
-    background-color: #94f877;
+    background-color: #089541   ;
 }
 
 .ext-links {

@@ -5,7 +5,7 @@
     align-items: center;
     position: sticky;
     height: 60px;
-    color: #11170d;
+    color: #ddfdd3;
     box-sizing: border-box;
     border-radius: 10px;
     font-size: 22px;
@@ -22,7 +22,7 @@
 
 .Navbar a {
     text-decoration: none;
-    color: #11170d;
+    color: #ddfdd3;
     padding-left: 6px;
 }
 

@@ -12,9 +12,8 @@
     gap: 10px;
     color: none;
     box-shadow: 1px 1px 2px black;
-    background-color: #089541;
+    
     margin-bottom: 14px;
-    margin-top: 14px;
     border-radius: 10px;
 }
 
@@ -23,6 +22,11 @@
 .project-detail img {
     margin-bottom: 30px;
     
+}
+
+.top-section {
+    border-radius: 10px;
+   
 }
 
 .projectpage-img {

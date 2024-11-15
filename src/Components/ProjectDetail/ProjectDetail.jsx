@@ -18,7 +18,9 @@ import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutl
                     <h1>{title}</h1>
                     <div></div>
                 </div>
-                <img src={mainImage} alt={`&{title} main`} className="projectpage-img"/>
+                <div className="top-section">
+                    <img src={mainImage} alt={`&{title} main`} className="projectpage-img"/>
+                </div>
                 <div className="s-container">
                        <img src={secondImage} alt="" className="mobile-img"/>
                         <div className="s-text">
