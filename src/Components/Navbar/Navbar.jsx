@@ -29,7 +29,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="Navbar">
+        <nav className="Navbar">
             <a href="#">Axel Bergquist</a>
             <div className="page-routes">
                 <span onClick={() => handleNavClick("home")} className="link">Home</span>|
@@ -37,7 +37,7 @@ const Navbar = () => {
                 <span onClick={() => handleNavClick("projects")} className="link">Projects</span>|
                 <span onClick={() => handleNavClick("contact")} className="link">Contact</span>
             </div>
-        </div>  
+        </nav>  
     )
 
 }

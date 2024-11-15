@@ -1,19 +1,20 @@
 .Navbar {
-    background-color: #9c8adf;
+    background-color: #faca6c;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    width: 100%;
+    position: sticky;
     height: 60px;
     color: #11170d;
     box-sizing: border-box;
+    border-radius: 10px;
     font-size: 22px;
-    padding: 0px 160px;
-    left: 0;
-    top: 0;
+    padding: 0px 150px;
+    top: 0.5cap;
     box-shadow: 1px 1px 2px black;
     z-index: 1;
+    
+    backdrop-filter: blur(10px);
 }
 
 .link {
