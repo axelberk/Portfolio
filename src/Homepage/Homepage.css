@@ -130,6 +130,9 @@
     padding: 10px;
     text-align: left;
     /* background-color: #089541; */
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+    animation-delay: 3s;
 }
 
 .about-container h1 {
@@ -140,6 +143,9 @@
     padding: 10px;
     border-radius: 10px;
     /* background-color: #089541; */
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+    animation-delay: 3s;
 }
 
 .projects-page h2 {
