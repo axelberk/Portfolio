@@ -12,7 +12,7 @@ const Homepage = () => {
   return (
     <div className="Homepage" id="home">
       <div className="intro-section">
-        <img className="pfp" src="me.jpg" alt="" />
+        <img className="pfp" src="me-no-bg.png" alt="" />
         <div className="intro-text">
           <h1>Web Developer</h1>
           <h2>
@@ -97,7 +97,7 @@ const Homepage = () => {
                 onClick={() => handleReadMore("/projects/countryfacts")}
                 variant="contained"
                 sx={{
-                  width: "200px",
+                  width: "160px",
                   backgroundColor: "#94f877",
                   color: "black",
                   borderRadius: "10px",
@@ -119,7 +119,7 @@ const Homepage = () => {
                 onClick={() => handleReadMore("/projects/spotifyclone")}
                 variant="contained"
                 sx={{
-                  width: "200px",
+                  width: "160px",
                   backgroundColor: "#94f877",
                   color: "black",
                   borderRadius: "10px",
@@ -141,7 +141,7 @@ const Homepage = () => {
                 onClick={() => handleReadMore("/projects/pwgen")}
                 variant="contained"
                 sx={{
-                  width: "200px",
+                  width: "160px",
                   backgroundColor: "#94f877",
                   color: "black",
                   borderRadius: "10px",
@@ -163,7 +163,7 @@ const Homepage = () => {
                 onClick={() => handleReadMore("/projects/advicegen")}
                 variant="contained"
                 sx={{
-                  width: "200px",
+                  width: "160px",
                   backgroundColor: "#94f877",
                   color: "black",
                   borderRadius: "10px",

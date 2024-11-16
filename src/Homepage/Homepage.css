@@ -71,8 +71,8 @@
     bottom: -80px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #4A4947;
-    color: #E2F1E7;
+    background-color: #089541;
+    color: inherit;
     padding: 8px 12px;
     border-radius: 10px;
     font-size: 16px;
@@ -90,7 +90,7 @@
     width: 100px;
     max-height: 100px;
     transition: all .2s ease-in-out;
-    background-color: #94f877;
+    background-color: #089541;
     border-radius: 30%;
     padding: 4px;
 }
@@ -121,6 +121,10 @@
     padding: 10px;
     border-radius: 10px;
     /* background-color: #089541; */
+}
+
+.projects-page h2 {
+    color: #ddfdd3;
 }
 
 .projects-container {
@@ -156,7 +160,7 @@
 .img-overlay {
     position: absolute;
     inset: 0px;
-    background-color: #26262699;
+    background-color: #05050599;
     border-radius: 10px;
 }
 

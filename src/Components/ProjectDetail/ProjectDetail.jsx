@@ -32,8 +32,8 @@ import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutl
                             ))}
                         </div>
                         <div className="project-links">
-                            <Button href={projectLink} variant="contained" target="_blank" sx={{width:"110px", backgroundColor:"#94f877", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit"}}>Try it<i class="fa fa-external-link" aria-hidden="true"></i></Button>
-                            <Button href={projectGithub} variant="contained" target="_blank" sx={{width:"120px", backgroundColor:"#94f877", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit"}}>Github<i class="fa fa-external-link" aria-hidden="true"></i></Button>
+                            <Button href={projectLink} variant="contained" target="_blank" sx={{width:"120px", backgroundColor:"#94f877", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit"}}>Try it<i class="fa fa-external-link" aria-hidden="true"></i></Button>
+                            <Button href={projectGithub} variant="contained" target="_blank" sx={{width:"130px", backgroundColor:"#94f877", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit"}}>Github<i class="fa fa-external-link" aria-hidden="true"></i></Button>
                         </div>
                     </div>
                 </div>
