@@ -61,7 +61,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <hr style={{width:"100%"}}/>
+      <hr className="divider"/>
 
       <div className="about-container" id="about">
         <h1>Who am I?</h1>
@@ -82,7 +82,7 @@ const Homepage = () => {
           CV
         </Button>
       </div>
-      <hr style={{width:"100%"}}/>
+      <hr className="divider"/>
       <div className="projects-page" id="projects">
         <h1>Projects</h1>
         <div className="projects-container">
@@ -176,7 +176,7 @@ const Homepage = () => {
           </article>
         </div>
       </div>
-      <hr style={{width:"100%"}}/>
+      <hr className="divider"/>
       <div className="Contact" id="contact">
         <h3>Contact & Links</h3>
         <div className="ext-links">
@@ -187,7 +187,7 @@ const Homepage = () => {
             <img src="LI-In-Bug.png" alt="" />
           </a>
           <a href="https://github.com/axelberk" target="_blank">
-            <img src="github-mark.png" alt="" />
+            <img src="github-mark-white.png" alt="" />
           </a>
           <a href="mailto:axel.bergquist94@gmail.com">
             <img src="icon-gmail.png" alt="" />

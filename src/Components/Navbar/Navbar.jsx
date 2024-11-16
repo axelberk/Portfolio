@@ -32,10 +32,10 @@ const Navbar = () => {
         <nav className="Navbar">
             <a href="#">Axel Bergquist</a>
             <div className="page-routes">
-                <span onClick={() => handleNavClick("home")} className="link">Home</span>|
-                <span onClick={() => handleNavClick("about")} className="link">About</span>|
-                <span onClick={() => handleNavClick("projects")} className="link">Projects</span>|
-                <span onClick={() => handleNavClick("contact")} className="link">Contact</span>
+                <Link to="home" smooth={true} duration={500} offset={-110} activeClass="active-link" onClick={() => handleNavClick("home")} className="link">Home</Link>|
+                <Link onClick={() => handleNavClick("about")} className="link">About</Link>|
+                <Link onClick={() => handleNavClick("projects")} className="link">Projects</Link>|
+                <Link onClick={() => handleNavClick("contact")} className="link">Contact</Link>
             </div>
         </nav>  
     )

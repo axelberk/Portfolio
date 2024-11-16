@@ -17,11 +17,8 @@
     border-radius: 10px;
 }
 
-
-
 .project-detail img {
     margin-bottom: 30px;
-    
 }
 
 .top-section {
@@ -33,6 +30,8 @@
     width: 100%;
     border-radius: 10px;
     padding: 0px 10px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
 }
 
 .project-display-s {
@@ -41,6 +40,9 @@
 
 .mobile-img {
     width: 250px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+    animation-delay: 1.5s;
 }
 
 .iphone-container {
