@@ -25,15 +25,19 @@ import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutl
                        <img src={secondImage} alt="" className="mobile-img"/>
                         <div className="s-text">
                         <p>{description}</p>
-                        <p>Made with:</p>
-                        <div className="stacks-used">
-                            {stack.map((tech, index) => (
-                                <div key={index} className="chip">{tech}</div>
-                            ))}
+                        
+                        
+                        <div className="made-with">
+                            <p>Made with:</p>
+                            <div className="stacks-used">
+                                {stack.map((tech, index) => (
+                                    <div key={index} className="chip">{tech}</div>
+                                ))}
+                            </div>
                         </div>
                         <div className="project-links">
-                            <Button href={projectLink} variant="contained" target="_blank" sx={{width:"120px", backgroundColor:"#94f877", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit"}}>Try it<i class="fa fa-external-link" aria-hidden="true"></i></Button>
-                            <Button href={projectGithub} variant="contained" target="_blank" sx={{width:"130px", backgroundColor:"#94f877", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit"}}>Github<i class="fa fa-external-link" aria-hidden="true"></i></Button>
+                            <Button className="intro-button" href={projectLink} variant="contained" target="_blank" sx={{width:"120px", backgroundColor:"#94f877", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit"}}>Try it<i class="fa fa-external-link" aria-hidden="true"></i></Button>
+                            <Button className="intro-button" href={projectGithub} variant="contained" target="_blank" sx={{width:"130px", backgroundColor:"#94f877", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit"}}>Github<i class="fa fa-external-link" aria-hidden="true"></i></Button>
                         </div>
                     </div>
                 </div>

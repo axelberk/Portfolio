@@ -20,15 +20,9 @@ function App() {
                 <section id="home">
                   <Homepage />
                 </section>
-                <section id="about">
-                  {/* <About /> */}
-                </section>
-                <section id="projects">
-                  {/* <Projects /> */}
-                </section>
-                <section id="contact">
-                  {/* <Contact /> */}
-                </section>
+                <section id="about">{/* <About /> */}</section>
+                <section id="projects">{/* <Projects /> */}</section>
+                <section id="contact">{/* <Contact /> */}</section>
               </>
             }
           />
@@ -38,7 +32,7 @@ function App() {
             element={
               <ProjectDetail
                 title="Country Facts"
-                description="Something about this project"
+                description="A full database of the worlds countries. Integrated with a Rest API, this website comes with full search and filter functionality along with a more detailed page of each country, as well as dark mode and light mode functionality. Works well on smaller screens!"
                 mainImage="/laptop.png"
                 secondImage="/countryphone1.png"
                 stack={["React", "JavaScript", "HTML", "CSS", "Rest API"]}
@@ -72,7 +66,6 @@ function App() {
                 stack={["JavaScript", "HTML", "CSS"]}
                 projectLink="https://randompw-gen.netlify.app/"
                 projectGithub="https://github.com/axelberk/pwgen"
-                
               />
             }
           />

@@ -17,10 +17,6 @@
     border-radius: 10px;
 }
 
-.project-detail img {
-    margin-bottom: 30px;
-}
-
 .top-section {
     border-radius: 10px;
    
@@ -29,8 +25,6 @@
 .projectpage-img {
     width: 100%;
     border-radius: 10px;
-    padding: 0px 10px;
-    opacity: 0;
     animation: fadeIn 1.5s ease-in forwards;
 }
 
@@ -58,16 +52,26 @@
 
 .s-text {
     display: flex;
+    justify-content: baseline;
     flex-direction: column;
     gap: 20px;
     font-size: 18px;
 }
 
+.made-with {
+    flex-direction: row;
+}
+
 .stacks-used {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
     
+    gap: 10px;
+    height: 40px;
+}
+
+.stacks-used p {
+    margin-top: 0;
+    flex-direction: row;
 }
 
 .chip {
@@ -78,6 +82,7 @@
     background-color: #94f877;
     color: black;
     font-weight: 400;
+    width: 100%px;
 }
 
 .project-links {
