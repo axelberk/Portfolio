@@ -40,6 +40,11 @@
     text-decoration: none;;
 }
 
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
 /* .projects-button {
     width: 200px;
     background-color: #E2F1E7;
@@ -53,7 +58,6 @@
     align-self: center;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    opacity: 0;
     animation: fadeIn 1.5s ease-in forwards;
   }
 
@@ -68,7 +72,7 @@
 
 .chips-container {
     display: flex;
-    justify-content: baseline;
+    justify-content: space-evenly;
     flex-direction: row;
     padding: 20px 0px;
     max-width: 100%;
@@ -145,7 +149,7 @@
     /* background-color: #089541; */
     opacity: 0;
     animation: fadeIn 1.5s ease-in forwards;
-    animation-delay: 3s;
+    animation-delay: 4.5s;
 }
 
 .projects-page h2 {

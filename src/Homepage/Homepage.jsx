@@ -1,9 +1,32 @@
 import "./HomePage.css";
-import { Button} from "@mui/material";
+import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { scroller } from "react-scroll";
+
 
 const Homepage = () => {
   const navigate = useNavigate();
+
+  const handleNavClick = (sectionId) => {
+        
+    if (location.pathname === "/") {
+        scroller.scrollTo(sectionId, { 
+            smooth: true,
+            duration: 500,
+            offset: -70,
+         })
+
+    } else {
+        navigate("/")
+        setTimeout(() => {
+            scroller.scrollTo(sectionId, {
+                smooth: true,
+                duration: 500,
+                offset: -70,
+            })
+        }, 200)
+    }
+}
 
   const handleReadMore = (route) => {
     navigate(route);
@@ -12,77 +35,90 @@ const Homepage = () => {
   return (
     <div className="Homepage" id="home">
       <div className="intro-section">
-        <img className="pfp" src="me-no-bg.png" alt="" />
+        <img className="pfp" src="me-no-bg1.png" alt="" />
         <div className="intro-text">
           <h1>Web Developer</h1>
           <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis repellendus, illum eius explicabo nemo nobis ipsam
-            eligendi odio temporibus veritatis mollitia illo perferendis
-            voluptate ab sint, id distinctio. Aspernatur, labore.
+            An aspiring web developer keen and eager to get stuck into all
+            things code.
           </h2>
-          <h3> </h3>
-          <div className="chips-container">
-            <div className="tooltip-container">
-              <img src="react-logo.png" alt="" className="stack-logo" />
-              <span className="tooltip-text">React</span>
-            </div>
-
-            <div className="tooltip-container">
-              <img src="JS-logo2.png" alt="" className="stack-logo" />
-              <span className="tooltip-text">JavaScript</span>
-            </div>
-
-            <div className="tooltip-container">
-              <img src="HTML5_logo.svg" alt="" className="stack-logo" />
-              <span className="tooltip-text">HTML</span>
-            </div>
-
-            <div className="tooltip-container">
-              <img src="CSS3_logo.svg" alt="" className="stack-logo" />
-              <span className="tooltip-text">CSS</span>
-            </div>
-
-            <div className="tooltip-container">
-              <img src="Git-Icon.png" alt="" className="stack-logo" />
-              <span className="tooltip-text">Git</span>
-            </div>
-
-            <div className="tooltip-container">
-              <img src="Npm-logo.svg" alt="" className="stack-logo" />
-              <span className="tooltip-text">NPM</span>
-            </div>
-
-            <div className="tooltip-container">
-              <img src="MongoDB_Logo.svg" alt="" className="stack-logo" />
-              <span className="tooltip-text">MongoDB</span>
-            </div>
+          <div className="buttons">
+            <Button
+              onClick={() => handleNavClick("projects")}
+              variant="contained"
+              sx={{
+                width: "100px",
+                backgroundColor: "#94f877",
+                color: "black",
+                font: "inherit",
+              }}
+            >
+              Projects
+            </Button>
+            <Button
+              href=""
+              variant="contained"
+              target="_blank"
+              sx={{
+                width: "100px",
+                backgroundColor: "#94f877",
+                color: "black",
+                font: "inherit",
+              }}
+            >
+              CV
+            </Button>
           </div>
         </div>
       </div>
 
-      <hr className="divider"/>
+      <hr className="divider" />
 
       <div className="about-container" id="about">
         <h1>Who am I?</h1>
         <h2>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
-          dolores tempore impedit veritatis eligendi natus ipsam quibusdam
-          similique, porro rem, culpa nemo blanditiis beatae facilis dicta
-          voluptates aut quis quidem voluptatem ex facere distinctio molestias
-          qui. Nam asperiores quidem ipsum corporis, ex dolorem at, aliquam
-          ratione in velit, doloremque animi?
+          Based in Stockholm, I was recently lost in the jungle of life until I
+          found my calling nested in VS Code. Helped along by my friends over at
+          Techover Academy, I have recently completed their course in Web Development and am now looking for my first position in the field.
         </h2>
-        <Button
-          href=""
-          variant="contained"
-          target="_blank"
-          sx={{ width: "100px", backgroundColor: "#94f877", color: "black", font:"inherit" }}
-        >
-          CV
-        </Button>
+        <div className="chips-container">
+          <div className="tooltip-container">
+            <img src="react-logo.png" alt="" className="stack-logo" />
+            <span className="tooltip-text">React</span>
+          </div>
+
+          <div className="tooltip-container">
+            <img src="JS-logo2.png" alt="" className="stack-logo" />
+            <span className="tooltip-text">JavaScript</span>
+          </div>
+
+          <div className="tooltip-container">
+            <img src="HTML5_logo.svg" alt="" className="stack-logo" />
+            <span className="tooltip-text">HTML</span>
+          </div>
+
+          <div className="tooltip-container">
+            <img src="CSS3_logo.svg" alt="" className="stack-logo" />
+            <span className="tooltip-text">CSS</span>
+          </div>
+
+          <div className="tooltip-container">
+            <img src="Git-Icon.png" alt="" className="stack-logo" />
+            <span className="tooltip-text">Git</span>
+          </div>
+
+          <div className="tooltip-container">
+            <img src="Npm-logo.svg" alt="" className="stack-logo" />
+            <span className="tooltip-text">NPM</span>
+          </div>
+
+          <div className="tooltip-container">
+            <img src="MongoDB_Logo.svg" alt="" className="stack-logo" />
+            <span className="tooltip-text">MongoDB</span>
+          </div>
+        </div>
       </div>
-      <hr className="divider"/>
+      <hr className="divider" />
       <div className="projects-page" id="projects">
         <h1>Projects</h1>
         <div className="projects-container">
@@ -101,7 +137,7 @@ const Homepage = () => {
                   backgroundColor: "#94f877",
                   color: "black",
                   borderRadius: "10px",
-                  font:"inherit"
+                  font: "inherit",
                 }}
               >
                 Read more
@@ -123,7 +159,7 @@ const Homepage = () => {
                   backgroundColor: "#94f877",
                   color: "black",
                   borderRadius: "10px",
-                  font:"inherit"
+                  font: "inherit",
                 }}
               >
                 Read more
@@ -145,7 +181,7 @@ const Homepage = () => {
                   backgroundColor: "#94f877",
                   color: "black",
                   borderRadius: "10px",
-                  font:"inherit"
+                  font: "inherit",
                 }}
               >
                 Read more
@@ -167,7 +203,7 @@ const Homepage = () => {
                   backgroundColor: "#94f877",
                   color: "black",
                   borderRadius: "10px",
-                  font:"inherit"
+                  font: "inherit",
                 }}
               >
                 Read more
@@ -176,7 +212,7 @@ const Homepage = () => {
           </article>
         </div>
       </div>
-      <hr className="divider"/>
+      <hr className="divider" />
       <div className="Contact" id="contact">
         <h3>Contact & Links</h3>
         <div className="ext-links">
