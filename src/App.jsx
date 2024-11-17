@@ -2,10 +2,7 @@ import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Homepage from "./Homepage/Homepage";
-// import About from "./Components/About/About";
-// import Projects from "./Components/Projects/Projects";
 import Footer from "./Components/Footer/Footer";
-// import Contact from "./Components/Contact/Contact";
 import "@mui/material";
 import ProjectDetail from "./Components/ProjectDetail/ProjectDetail";
 
@@ -36,10 +33,6 @@ function App() {
             }
           />
 
-          {/* <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} /> */}
-
           <Route
             path="/projects/countryfacts"
             element={
@@ -47,7 +40,7 @@ function App() {
                 title="Country Facts"
                 description="Something about this project"
                 mainImage="/laptop.png"
-                secondImage="/countryphone.png"
+                secondImage="/countryphone1.png"
                 stack={["React", "JavaScript", "HTML", "CSS", "Rest API"]}
                 projectLink="https://countryfactbase.netlify.app/"
                 projectGithub="https://github.com/axelberk/flagproject"

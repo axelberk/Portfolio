@@ -116,6 +116,7 @@
     background-color: #089541;
     border-radius: 30%;
     padding: 4px;
+    object-fit: contain;
 }
 
 .stack-logo:hover {
@@ -137,6 +138,30 @@
     opacity: 0;
     animation: fadeIn 1.5s ease-in forwards;
     animation-delay: 3s;
+}
+
+.modal {
+    position: fixed;
+    top: 50px;
+    left: 400px;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modal-content img {
+    width: 700px;
 }
 
 .about-container h1 {

@@ -1,10 +1,21 @@
 import "./HomePage.css";
+import { useState } from "react";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { scroller } from "react-scroll";
 
 
 const Homepage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const openModal = () => {
+    setIsModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false)
+  }
+
   const navigate = useNavigate();
 
   const handleNavClick = (sectionId) => {
@@ -78,8 +89,23 @@ const Homepage = () => {
         <h1>Who am I?</h1>
         <h2>
           Based in Stockholm, I was recently lost in the jungle of life until I
-          found my calling nested in VS Code. Helped along by my friends over at
-          Techover Academy, I have recently completed their course in Web Development and am now looking for my first position in the field.
+          found my calling in code. Helped along by my friends over at
+          <a href="#" onClick={openModal}>Techover Academy</a>
+
+          {isModalOpen && (
+            <div className="modal" onClick={closeModal}>
+              <div className="modal-content" onClick={(e) => e.stopPropagation}>
+                <img src="techover-cert.png" alt="" />
+                <Button variant="outlined" onClick={closeModal} sx={{width: "100px",
+                  backgroundColor: "#94f877",
+                  color: "black",
+                  borderRadius: "10px",
+                  font: "inherit", alignSelf:"center"}}>Close</Button>
+              </div>
+
+            </div>
+          )}
+          , I have recently completed their course in Web Development and am now looking for my first position in the field. I'm eager to delve deeper into all kinds of stacks and technologies. Below is listed a few of which I am already familiar with.
         </h2>
         <div className="chips-container">
           <div className="tooltip-container">
@@ -115,6 +141,11 @@ const Homepage = () => {
           <div className="tooltip-container">
             <img src="MongoDB_Logo.svg" alt="" className="stack-logo" />
             <span className="tooltip-text">MongoDB</span>
+          </div>
+
+          <div className="tooltip-container">
+            <img src="mui-logo.png" alt="" className="stack-logo"/>
+            <span className="tooltip-text">MUI</span>
           </div>
         </div>
       </div>
