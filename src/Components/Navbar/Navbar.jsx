@@ -30,7 +30,7 @@ const Navbar = () => {
 
     return (
         <nav className="Navbar">
-            <a href="#">Axel Bergquist</a>
+            <a href="/">Axel Bergquist</a>
             <div className="page-routes">
                 <Link to="home" smooth={true} duration={500} offset={-110} activeClass="active-link" onClick={() => handleNavClick("home")} className="link">Home</Link>|
                 <Link onClick={() => handleNavClick("about")} className="link">About</Link>|

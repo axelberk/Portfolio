@@ -8,7 +8,7 @@ const Homepage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     setIsModalOpen(true);
   };
 
@@ -60,10 +60,11 @@ const Homepage = () => {
         <div className="intro-text">
           <h1>Web Developer</h1>
           <h2>
-            An up-and-coming web developer keen to get stuck into all things code.
+            An up-and-coming web developer keen to get stuck into all things
+            code.
           </h2>
           <div className="buttons">
-          <Button
+            <Button
               className="intro-button"
               onClick={() => handleNavClick("about")}
               variant="contained"
@@ -95,13 +96,17 @@ const Homepage = () => {
               variant="contained"
               target="_blank"
               sx={{
-                width: "100px",
+                width: "80px",
                 backgroundColor: "#94f877",
                 color: "black",
                 font: "inherit",
+                display:"flex",
+                justifyContent:"space-between"
               }}
+              
             >
               CV
+              <i class="fa fa-external-link" aria-hidden="true"></i>
             </Button>
           </div>
         </div>
@@ -112,8 +117,8 @@ const Homepage = () => {
       <div className="about-container" id="about">
         <h1>Who am I?</h1>
         <h2>
-          Based in Stockholm, for a long time I was lost in the jungle of life until I
-          found my calling in code. Helped along by my friends over at{" "}
+          Based in Stockholm, for a long time I was lost in the jungle of life
+          until I found my calling in code. Helped along by my friends over at{" "}
           <a href="#" onClick={openModal}>
             Techover Academy
           </a>
@@ -122,6 +127,7 @@ const Homepage = () => {
               <div className="modal-content" onClick={(e) => e.stopPropagation}>
                 <img src="techover-cert.png" alt="" />
                 <Button
+                  className="intro-button"
                   variant="outlined"
                   onClick={closeModal}
                   sx={{
@@ -131,6 +137,8 @@ const Homepage = () => {
                     borderRadius: "10px",
                     font: "inherit",
                     alignSelf: "center",
+                    fontSize:"16px",
+                    fontWeight:"500"
                   }}
                 >
                   Close
@@ -140,7 +148,8 @@ const Homepage = () => {
           )}
           , I recently completed their course in Web Development and am now
           looking for my first position in the field. I'm eager to delve deeper
-          into all kinds of stacks and technologies, and below are a few I am already familiar with.
+          into all kinds of stacks and technologies, and below are a few I am
+          already familiar with.
         </h2>
         <div className="chips-container">
           <div className="tooltip-container">
@@ -180,7 +189,7 @@ const Homepage = () => {
 
           <div className="tooltip-container">
             <img src="mui-logo.png" alt="" className="stack-logo" />
-            <span className="tooltip-text">MUI</span>
+            <span className="tooltip-text">Material UI</span>
           </div>
         </div>
       </div>
@@ -196,7 +205,7 @@ const Homepage = () => {
             <div className="project-text">
               <h2>Country Facts</h2>
               <Button
-              className="intro-button"
+                className="intro-button"
                 onClick={() => handleReadMore("/projects/countryfacts")}
                 variant="contained"
                 sx={{
@@ -219,7 +228,7 @@ const Homepage = () => {
             <div className="project-text">
               <h2>Spotify Clone</h2>
               <Button
-              className="intro-button"
+                className="intro-button"
                 onClick={() => handleReadMore("/projects/spotifyclone")}
                 variant="contained"
                 sx={{
@@ -242,7 +251,7 @@ const Homepage = () => {
             <div className="project-text">
               <h2>Password Generator</h2>
               <Button
-              className="intro-button"
+                className="intro-button"
                 onClick={() => handleReadMore("/projects/pwgen")}
                 variant="contained"
                 sx={{
@@ -265,7 +274,7 @@ const Homepage = () => {
             <div className="project-text">
               <h2>Advice Generator</h2>
               <Button
-              className="intro-button"
+                className="intro-button"
                 onClick={() => handleReadMore("/projects/advicegen")}
                 variant="contained"
                 sx={{

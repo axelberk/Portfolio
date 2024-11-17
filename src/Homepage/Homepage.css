@@ -45,6 +45,11 @@
     gap: 10px;
 }
 
+.intro-button {
+    animation: fadeIn 1.5s ease-in forwards;
+    animation-delay: 1.5s;
+}
+
 .intro-button:hover {
     background-color: #089541;
     color:#ddfdd3;
@@ -122,6 +127,8 @@
     border-radius: 30%;
     padding: 4px;
     object-fit: contain;
+    animation: fadeIn 1.5s ease-in forwards;
+    animation-delay: 3s;
 }
 
 .stack-logo:hover {
