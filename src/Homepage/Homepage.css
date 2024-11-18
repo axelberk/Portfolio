@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background-color: #061201;
+    background-color: #f1feec;
     border-radius: 10px;
     gap: 50px;
 }
@@ -19,16 +19,11 @@
     border-color: #ddfdd3;
 }
 
-.Homepage h1 {
-    font-size: 32px;
-    margin-top: 0;
-}
-
 .intro-section {
     display: flex;
     flex-direction: row;
     border-radius: 10px;
-    
+    align-self: center;
     box-shadow: 1px 1px 2px black;
 }
 
@@ -76,7 +71,7 @@
 } */
 
 .pfp {
-    max-width: 350px;
+    max-width: 400px;
     align-self: center;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -229,7 +224,7 @@
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
     gap: 30px;
     position: relative;
     
@@ -240,7 +235,7 @@
     border-radius: 10px;
     position: relative;
     color: white;
-
+    width: 75%;
 }
 
 

@@ -66,13 +66,14 @@ const Homepage = () => {
   return (
     <div className={`Homepage ${hasAnimated ? "no-animations" : ""}`} id="home">
       <div className="intro-section">
-        <img className="pfp" src="me-no-bg1.png" alt="" />
+        <img className="pfp" src="me.jpg" alt="" />
         <div className="intro-text">
-          <h1>Web Developer</h1>
+          <h1>Welcome! My name is</h1>
           <h2>
-            An up-and-coming web developer keen to get stuck into all things
-            code.
+            Axel Bergquist
           </h2>
+          <h3>An up-and-coming web developer keen to get stuck into all things
+          code.</h3>
           <div className="buttons">
             <Button
               className="intro-button"
@@ -99,24 +100,6 @@ const Homepage = () => {
               }}
             >
               Projects
-            </Button>
-            <Button
-              className="intro-button"
-              href=""
-              variant="contained"
-              target="_blank"
-              sx={{
-                width: "80px",
-                backgroundColor: "#94f877",
-                color: "black",
-                font: "inherit",
-                display:"flex",
-                justifyContent:"space-between"
-              }}
-              
-            >
-              CV
-              <i class="fa fa-external-link" aria-hidden="true"></i>
             </Button>
           </div>
         </div>
@@ -146,7 +129,6 @@ const Homepage = () => {
                     color: "black",
                     borderRadius: "10px",
                     font: "inherit",
-                    alignSelf: "center",
                     fontSize:"16px",
                     fontWeight:"500"
                   }}
