@@ -14,7 +14,7 @@ import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutl
         return (
             <div className="project-detail">
                 <div className="button-and-title">
-                    <Button onClick={handleBackClick} variant="contained" sx={{width:"60px", height:"50px", backgroundColor:"#94f877", color:"black", borderRadius:"10px"}}><ArrowBackIosNewOutlinedIcon/></Button>
+                    <Button onClick={handleBackClick} variant="contained" sx={{width:"60px", height:"50px", backgroundColor:"aquamarine", color:"black", borderRadius:"10px"}}><ArrowBackIosNewOutlinedIcon/></Button>
                     <h1>{title}</h1>
                     <div></div>
                 </div>
@@ -36,8 +36,8 @@ import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutl
                             </div>
                         </div>
                         <div className="project-links">
-                            <Button className="intro-button" href={projectLink} variant="contained" target="_blank" sx={{width:"120px", backgroundColor:"#94f877", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit"}}>Try it<i class="fa fa-external-link" aria-hidden="true"></i></Button>
-                            <Button className="intro-button" href={projectGithub} variant="contained" target="_blank" sx={{width:"130px", backgroundColor:"#94f877", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit"}}>Github<i class="fa fa-external-link" aria-hidden="true"></i></Button>
+                            <Button className="project-link-button" href={projectLink} variant="contained" target="_blank" sx={{width:"120px", backgroundColor:"aquamarine", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit"}}>Try it<i class="fa fa-external-link" aria-hidden="true"></i></Button>
+                            <Button className="project-link-button" href={projectGithub} variant="contained" target="_blank" sx={{width:"130px", backgroundColor:"aquamarine", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit"}}>Github<i class="fa fa-external-link" aria-hidden="true"></i></Button>
                         </div>
                     </div>
                 </div>

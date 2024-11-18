@@ -1,11 +1,11 @@
 .Navbar {
-    background-color: #040268;
+    background-color: #01003b;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     height: 60px;
-    color: #ddfdd3;
+    color: #ccd6f6;
     box-sizing: border-box;
     border-radius: 10px;
     font-size: 22px;
@@ -23,7 +23,7 @@
 }
 
 .link:hover {
-    color: #94f877;
+    color: aquamarine;
 }
 
 .link:after {
@@ -34,7 +34,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #94f877;
+    background-color: aquamarine;
     transform-origin: bottom-right;
     transition: transform 0.25s ease-out;
 }
@@ -46,12 +46,17 @@
 
 .Navbar a {
     text-decoration: none;
-    color: #ddfdd3;
-    
+    color: #ccd6f6;
 }
 
-.Navbar img {
-    max-height: 35px;
+.cv-button {
+   border-radius: 10px;
+    width: 80px;
+    background-color: aquamarine;
+    color: black;
+    font: inherit;
+    display:flex;
+    justify-content:space-around 
 }
 
 .page-routes {

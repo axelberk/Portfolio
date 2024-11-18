@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background-color: #f1feec;
+    background-color: #01003b;
     border-radius: 10px;
     gap: 50px;
 }
@@ -25,6 +25,22 @@
     border-radius: 10px;
     align-self: center;
     box-shadow: 1px 1px 2px black;
+    width: 100%;
+}
+
+.hero-head {
+    font-size: 20px;
+    margin: 0;
+}
+
+.hero-name {
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hero-desc {
+    margin-top: 0;
 }
 
 .intro-text {
@@ -47,28 +63,35 @@
     gap: 10px;
 }
 
-/* .intro-button {
-    animation: fadeIn 1.5s ease-in forwards;
-    animation-delay: 1.5s;
-} */
+.intro-button {
+    background-color: aquamarine;
+    font: inherit;
+    width: 130px;
+    border-radius: 10px;
+}
+
+.project-button {
+    background-color: wheat;
+}
 
 .intro-button:hover {
     background-color: #089541;
     color:#ddfdd3;
 }
 
-.close-button:hover {
-    background-color: #089541;
-    color:#ddfdd3;
+.close-button {
+    width: 100px;
+    background-color: aqua;
+    font: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    align-self: center
 }
 
-/* .projects-button {
-    width: 200px;
-    background-color: #E2F1E7;
-    color: black;
-    font: inherit;
-    font-weight: 500;
-} */
+.close-button:hover {
+    background-color: aquamarine;
+    color:#ddfdd3;
+}
 
 .pfp {
     max-width: 400px;
@@ -130,7 +153,7 @@
     width: 100px;
     max-height: 100px;
     transition: all .2s ease-in-out;
-    background-color: #089541;
+    background-color: aquamarine;
     border-radius: 30%;
     padding: 4px;
     object-fit: contain;
@@ -157,7 +180,7 @@
 }
 
 .about-container a {
-    color: #089541;
+    color: aquamarine;
     text-decoration: none;
     display: inline-block;
     position: relative;

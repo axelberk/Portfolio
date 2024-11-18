@@ -78,7 +78,7 @@
     border-radius: 10px;
     padding: 10px;
     font-size: 16px;
-    background-color: #94f877;
+    background-color: aquamarine;
     color: black;
     font-weight: 400;
     width: 100%px;
@@ -87,5 +87,9 @@
 .project-links {
     display: flex;
     gap: 10px;
+}
+
+.project-link-button {
+    background-color: aqua;
 }
 

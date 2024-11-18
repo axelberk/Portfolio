@@ -66,38 +66,27 @@ const Homepage = () => {
   return (
     <div className={`Homepage ${hasAnimated ? "no-animations" : ""}`} id="home">
       <div className="intro-section">
-        <img className="pfp" src="me.jpg" alt="" />
+        <img className="pfp" src="me-no-bg1.png" alt="" />
         <div className="intro-text">
-          <h1>Welcome! My name is</h1>
-          <h2>
+          <h1 className="hero-head">Welcome! My name is</h1>
+          <h2 className="hero-name">
             Axel Bergquist
           </h2>
-          <h3>An up-and-coming web developer keen to get stuck into all things
+          <h3 className="hero-desc">An up-and-coming web developer keen to get stuck into all things
           code.</h3>
           <div className="buttons">
             <Button
               className="intro-button"
               onClick={() => handleNavClick("about")}
               variant="contained"
-              sx={{
-                width: "120px",
-                backgroundColor: "#94f877",
-                color: "black",
-                font: "inherit",
-              }}
+              sx={{backgroundColor:"aquamarine", color:"black"}}
             >
               About me
             </Button>
             <Button
-              className="intro-button"
+              className="project-button"
               onClick={() => handleNavClick("projects")}
               variant="contained"
-              sx={{
-                width: "100px",
-                backgroundColor: "#94f877",
-                color: "black",
-                font: "inherit",
-              }}
             >
               Projects
             </Button>
@@ -123,15 +112,6 @@ const Homepage = () => {
                   className="close-button"
                   variant="outlined"
                   onClick={closeModal}
-                  sx={{
-                    width: "100px",
-                    backgroundColor: "#94f877",
-                    color: "black",
-                    borderRadius: "10px",
-                    font: "inherit",
-                    fontSize:"16px",
-                    fontWeight:"500"
-                  }}
                 >
                   Close
                 </Button>
@@ -200,13 +180,6 @@ const Homepage = () => {
                 className="intro-button"
                 onClick={() => handleReadMore("/projects/countryfacts")}
                 variant="contained"
-                sx={{
-                  width: "160px",
-                  backgroundColor: "#94f877",
-                  color: "black",
-                  borderRadius: "10px",
-                  font: "inherit",
-                }}
               >
                 Read more
               </Button>
@@ -223,13 +196,6 @@ const Homepage = () => {
                 className="intro-button"
                 onClick={() => handleReadMore("/projects/spotifyclone")}
                 variant="contained"
-                sx={{
-                  width: "160px",
-                  backgroundColor: "#94f877",
-                  color: "black",
-                  borderRadius: "10px",
-                  font: "inherit",
-                }}
               >
                 Read more
               </Button>
@@ -246,13 +212,6 @@ const Homepage = () => {
                 className="intro-button"
                 onClick={() => handleReadMore("/projects/pwgen")}
                 variant="contained"
-                sx={{
-                  width: "160px",
-                  backgroundColor: "#94f877",
-                  color: "black",
-                  borderRadius: "10px",
-                  font: "inherit",
-                }}
               >
                 Read more
               </Button>
@@ -269,13 +228,6 @@ const Homepage = () => {
                 className="intro-button"
                 onClick={() => handleReadMore("/projects/advicegen")}
                 variant="contained"
-                sx={{
-                  width: "160px",
-                  backgroundColor: "#94f877",
-                  color: "black",
-                  borderRadius: "10px",
-                  font: "inherit",
-                }}
               >
                 Read more
               </Button>

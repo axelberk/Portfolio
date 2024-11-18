@@ -37,19 +37,10 @@ const Navbar = () => {
                 <Link onClick={() => handleNavClick("projects")} className="link">Projects</Link>|
                 <Link onClick={() => handleNavClick("contact")} className="link">Contact</Link>
                 <Button
-              className="intro-button"
+              className="cv-button"
               href=""
               variant="contained"
               target="_blank"
-              sx={{
-                width: "80px",
-                backgroundColor: "#94f877",
-                color: "black",
-                font: "inherit",
-                display:"flex",
-                justifyContent:"space-between"
-              }}
-              
             >
               CV
               <i class="fa fa-external-link" aria-hidden="true"></i>
