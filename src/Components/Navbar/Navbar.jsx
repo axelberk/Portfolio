@@ -41,6 +41,7 @@ const Navbar = () => {
               href=""
               variant="contained"
               target="_blank"
+            style={{fontSize:"20px"}}
             >
               CV
               <i class="fa fa-external-link" aria-hidden="true"></i>

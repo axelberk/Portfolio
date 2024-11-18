@@ -89,7 +89,8 @@
     gap: 10px;
 }
 
-.project-link-button {
-    background-color: aqua;
+.project-link-button:hover {
+    background-color: #01003b;
+    color: inherit;
 }
 

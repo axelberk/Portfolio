@@ -50,13 +50,14 @@
 }
 
 .cv-button {
-   border-radius: 10px;
+    border-radius: 10px;
     width: 80px;
     background-color: aquamarine;
     color: black;
     font: inherit;
     display:flex;
-    justify-content:space-around 
+    justify-content: space-around;
+    cursor: pointer;
 }
 
 .page-routes {

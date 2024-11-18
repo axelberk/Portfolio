@@ -70,18 +70,18 @@
     border-radius: 10px;
 }
 
-.project-button {
-    background-color: wheat;
+.intro-button:hover {
+    background-color: #01003b;
+    color:#ccd6f6;
 }
 
-.intro-button:hover {
-    background-color: #089541;
-    color:#ddfdd3;
+.project-button:hover {
+    background-color: aquamarine;
+    color: #01003b;
 }
 
 .close-button {
     width: 100px;
-    background-color: aqua;
     font: inherit;
     font-size: 16px;
     font-weight: 500;
@@ -89,8 +89,8 @@
 }
 
 .close-button:hover {
-    background-color: aquamarine;
-    color:#ddfdd3;
+    background-color: #01003b;
+    color: #ccd6f6;
 }
 
 .pfp {
@@ -134,8 +134,8 @@
     bottom: -80px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #089541;
-    color: inherit;
+    background-color: aquamarine;
+    color: black;
     padding: 8px 12px;
     border-radius: 10px;
     font-size: 16px;

@@ -79,7 +79,7 @@ const Homepage = () => {
               className="intro-button"
               onClick={() => handleNavClick("about")}
               variant="contained"
-              sx={{backgroundColor:"aquamarine", color:"black"}}
+              sx={{backgroundColor:"aquamarine", color:"black", font:"inherit"}}
             >
               About me
             </Button>
@@ -87,6 +87,7 @@ const Homepage = () => {
               className="project-button"
               onClick={() => handleNavClick("projects")}
               variant="contained"
+              sx={{backgroundColor:"#01003b", color:"#ccd6f6", font:"inherit", border:"1px solid #ccd6f6"}}
             >
               Projects
             </Button>
@@ -112,6 +113,7 @@ const Homepage = () => {
                   className="close-button"
                   variant="outlined"
                   onClick={closeModal}
+                  sx={{backgroundColor:"aquamarine", color:"#01003b"}}
                 >
                   Close
                 </Button>
@@ -180,6 +182,7 @@ const Homepage = () => {
                 className="intro-button"
                 onClick={() => handleReadMore("/projects/countryfacts")}
                 variant="contained"
+                sx={{backgroundColor:"aquamarine", color:"black", font:"inherit"}}
               >
                 Read more
               </Button>
@@ -196,6 +199,7 @@ const Homepage = () => {
                 className="intro-button"
                 onClick={() => handleReadMore("/projects/spotifyclone")}
                 variant="contained"
+                sx={{backgroundColor:"aquamarine", color:"black", font:"inherit"}}
               >
                 Read more
               </Button>
@@ -212,6 +216,7 @@ const Homepage = () => {
                 className="intro-button"
                 onClick={() => handleReadMore("/projects/pwgen")}
                 variant="contained"
+                sx={{backgroundColor:"aquamarine", color:"black", font:"inherit"}}
               >
                 Read more
               </Button>
@@ -228,6 +233,7 @@ const Homepage = () => {
                 className="intro-button"
                 onClick={() => handleReadMore("/projects/advicegen")}
                 variant="contained"
+                sx={{backgroundColor:"aquamarine", color:"black", font:"inherit"}}
               >
                 Read more
               </Button>
