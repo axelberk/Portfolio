@@ -7,6 +7,13 @@
     gap: 50px;
 }
 
+.Homepage.no-animations .intro-text,
+.Homepage.no-animations .projects-page,
+.Homepage.no-animations .about-container {
+    animation: none;
+    opacity: 1;
+}
+
 .divider {
     width: 100%;
     border-color: #ddfdd3;
@@ -45,12 +52,17 @@
     gap: 10px;
 }
 
-.intro-button {
+/* .intro-button {
     animation: fadeIn 1.5s ease-in forwards;
     animation-delay: 1.5s;
-}
+} */
 
 .intro-button:hover {
+    background-color: #089541;
+    color:#ddfdd3;
+}
+
+.close-button:hover {
     background-color: #089541;
     color:#ddfdd3;
 }

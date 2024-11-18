@@ -6,6 +6,16 @@ import { scroller } from "react-scroll";
 
 const Homepage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(
+    sessionStorage.getItem("hasAnimated") === "true"
+  )
+
+  useEffect(() => {
+    if (!hasAnimated) {
+      setHasAnimated(true)
+      sessionStorage.setItem("hasAnimated", "true")
+    }
+  }, [hasAnimated])
 
   const openModal = (e) => {
     e.preventDefault();
@@ -54,7 +64,7 @@ const Homepage = () => {
   };
 
   return (
-    <div className="Homepage" id="home">
+    <div className={`Homepage ${hasAnimated ? "no-animations" : ""}`} id="home">
       <div className="intro-section">
         <img className="pfp" src="me-no-bg1.png" alt="" />
         <div className="intro-text">
@@ -127,7 +137,7 @@ const Homepage = () => {
               <div className="modal-content" onClick={(e) => e.stopPropagation}>
                 <img src="techover-cert.png" alt="" />
                 <Button
-                  className="intro-button"
+                  className="close-button"
                   variant="outlined"
                   onClick={closeModal}
                   sx={{

@@ -46,7 +46,7 @@ function App() {
             element={
               <ProjectDetail
                 title="Spotify Clone"
-                description="A clone with basic functionality. Can use on phone etc etc."
+                description="Fully responsive with basic functionality. Includes player controls such as play, pause, next and previous, as well as volume control, duration played and remaining, scrub through songs and more. Requires a Spotify Premium account to transfer the playback from."
                 mainImage="/spotifylaptop.png"
                 secondImage="/spotifyphone.png"
                 stack={["React", "Spotify API", "JavaScript"]}
@@ -60,7 +60,7 @@ function App() {
             element={
               <ProjectDetail
                 title="Password Generator"
-                description="Password generator with several criteria."
+                description="A password generator with up to four different criteria to choose from, as well as desired length. Comes with strength indicator based on the criteria chosen, as well as a button that copies the generated password to your clipboard for easy transfer."
                 mainImage="/passwordlaptop.png"
                 secondImage="/passwordphone.png"
                 stack={["JavaScript", "HTML", "CSS"]}
