@@ -4,6 +4,8 @@ import { useNavigate, useLocation } from "react-router-dom"
 import "./Navbar.css"
 
 const Navbar = () => {
+    const buttonStyle = { backgroundColor: "aquamarine", color: "black", font: "inherit" };
+    
     const navigate = useNavigate()
     const location = useLocation()
 
@@ -24,7 +26,7 @@ const Navbar = () => {
                     duration: 500,
                     offset: -70,
                 })
-            }, 200)
+            }, 300)
         }
     }
 
@@ -41,7 +43,6 @@ const Navbar = () => {
               href=""
               variant="contained"
               target="_blank"
-            style={{fontSize:"20px"}}
             >
               CV
               <i class="fa fa-external-link" aria-hidden="true"></i>

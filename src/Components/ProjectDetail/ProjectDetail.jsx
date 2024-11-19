@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom"
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
 
     const ProjectDetail = ({title, description, mainImage, secondImage, stack, projectLink, projectGithub}) => {
+        const buttonStyle = { backgroundColor: "aquamarine", color: "black", font: "inherit" };
+
         const navigate = useNavigate()
 
         const handleBackClick = () => {

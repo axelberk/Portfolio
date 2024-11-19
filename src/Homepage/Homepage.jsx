@@ -1,10 +1,14 @@
 import "./Homepage.css";
 import { useEffect, useState } from "react";
 import { Button } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
 
 const Homepage = (tech, stack) => {
+  const buttonStyle = { backgroundColor: "aquamarine", color: "black", font: "inherit" };
+
+  const location = useLocation()
+  
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [hasAnimated, setHasAnimated] = useState(
     sessionStorage.getItem("hasAnimated") === "true"
@@ -55,7 +59,7 @@ const Homepage = (tech, stack) => {
           duration: 500,
           offset: -70,
         });
-      }, 200);
+      }, 300);
     }
   };
 
@@ -79,7 +83,7 @@ const Homepage = (tech, stack) => {
               className="intro-button"
               onClick={() => handleNavClick("about")}
               variant="contained"
-              sx={{backgroundColor:"aquamarine", color:"black", font:"inherit"}}
+              sx={buttonStyle}
             >
               About me
             </Button>
@@ -171,74 +175,74 @@ const Homepage = (tech, stack) => {
       <div className="projects-page" id="projects">
         <h1>Projects</h1>
         <div className="projects-container">
-          <article className="project" >
+          <article className="project-left" >
             <div className="img-container">
               <img src="flagproject1.png" alt="" className="project-img" />
               <div className="img-overlay"></div>
             </div>
-            <div className="project-text-right">
+            <div className="project-left-text">
               <h2 className="project-title">Country Facts</h2>
-              <h3 className="project-description-l">Database of all the worlds countries.</h3>
+              <h3 className="project-description-l">Database of all the worlds countries, with detail for each as well as filter functionality.</h3>
               
               <Button
                 className="intro-button"
                 onClick={() => handleReadMore("/projects/countryfacts")}
                 variant="contained"
-                sx={{backgroundColor:"aquamarine", color:"black", font:"inherit"}}
+                sx={buttonStyle}
               >
                 Read more
               </Button>
             </div>
           </article>
-          <article className="project">
+          <article className="project-right">
             <div className="img-container">
               <img src="spotifyclone1.png" alt="" className="project-img" />
               <div className="img-overlay"></div>
             </div>
-            <div className="project-text-left">
+            <div className="project-right-text">
               <h2 className="project-title">Spotify Clone</h2>
               <h3 className="project-description-l">With basic functionality, scroll among saved playlists and play whatever fits the mood.</h3>
               <Button
                 className="intro-button"
                 onClick={() => handleReadMore("/projects/spotifyclone")}
                 variant="contained"
-                sx={{backgroundColor:"aquamarine", color:"black", font:"inherit"}}
+                sx={buttonStyle}
               >
                 Read more
               </Button>
             </div>
           </article>
-          <article className="project">
+          <article className="project-left">
             <div className="img-container">
               <img src="pw-gen1.png" alt="" className="project-img" />
               <div className="img-overlay"></div>
             </div>
-            <div className="project-text-right">
+            <div className="project-left-text">
               <h2 className="project-title">Password Generator</h2>
-              <h3 className="project-description-l"></h3>
+              <h3 className="project-description-l">Choose between four different criteria, randomly generate a password, and copy the result if needed.</h3>
               <Button
                 className="intro-button"
                 onClick={() => handleReadMore("/projects/pwgen")}
                 variant="contained"
-                sx={{backgroundColor:"aquamarine", color:"black", font:"inherit"}}
+                sx={buttonStyle}
               >
                 Read more
               </Button>
             </div>
           </article>
-          <article className="project">
+          <article className="project-right">
             <div className="img-container">
               <img src="advicegen1.png" alt="" className="project-img" />
               <div className="img-overlay"></div>
             </div>
-            <div className="project-text-left">
+            <div className="project-right-text">
               <h2 className="project-title">Advice Generator</h2>
-              <h3 className="project-description-l"></h3>
+              <h3 className="project-description-l">Randomly generate advice, and copy to spread if particularly inspired!</h3>
               <Button
                 className="intro-button"
                 onClick={() => handleReadMore("/projects/advicegen")}
                 variant="contained"
-                sx={{backgroundColor:"aquamarine", color:"black", font:"inherit"}}
+                sx={buttonStyle}
               >
                 Read more
               </Button>

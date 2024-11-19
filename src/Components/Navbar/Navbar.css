@@ -52,12 +52,17 @@
 .cv-button {
     border-radius: 10px;
     width: 80px;
-    background-color: aquamarine;
-    color: black;
-    font: inherit;
     display:flex;
     justify-content: space-around;
     cursor: pointer;
+    background-color: aquamarine;
+    font: inherit;
+    padding: 1px;
+}
+
+.cv-button:hover {
+    background-color: #01003b;
+    color: #ccd6f6;
 }
 
 .page-routes {
