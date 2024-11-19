@@ -73,6 +73,7 @@
 .intro-button:hover {
     background-color: #01003b;
     color:#ccd6f6;
+    border: 1px solid #ccd6f6;
 }
 
 .project-button:hover {
@@ -194,7 +195,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color:#089541;
+    background-color: aquamarine;
     transform-origin: bottom-right;
     transition: transform 0.25s ease-out;
 }
@@ -254,17 +255,16 @@
 }
 
 .project {
-    overflow: hidden;
+    overflow: visible;
     border-radius: 10px;
     position: relative;
-    color: white;
     width: 75%;
 }
 
 
 .project-img {
     width: 100%;
-    height: 300px;
+    height: 500px;
     border-radius: 10px;
     object-fit: cover;
     opacity: 0;
@@ -276,6 +276,7 @@
     position: relative;
     transition: transform 150ms;
     
+    
 }
 
 .img-overlay {
@@ -283,20 +284,57 @@
     inset: 0px;
     background-color: #05050599;
     border-radius: 10px;
+    
 }
 
-.project-text {
+.project-text-right {
     position:absolute;
     inset: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 20px;
+    justify-content: center;
+    padding: 60px;
+    text-align: right;
+    width: 400px;
+    height: 100px;
+    backdrop-filter: blur(3px);
+    align-items: flex-end;
+    align-self: last baseline;
+    left: 600px;
+    
+}
+
+.project-text-left {
+    position:absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
     text-align: left;
+    width: 400px;
+    height: 100px;
+    backdrop-filter: blur(3px);
+    align-self: last baseline;
+}
+
+.project-title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.project-description-l {
+    margin: 0px;
+    margin-bottom: 10px;
 }
 
 .project:hover .img-container{
-    transform: scale(1.05);
+    transition: transform 2s;
+}
+
+.project:hover .img-overlay {
+    display: none;
 }
 
 .Contact {
@@ -304,7 +342,6 @@
     margin-bottom: 100px;
     border-radius: 10px;
     box-shadow: 1px 1px 2px black;
-    
 }
 
 .ext-links {

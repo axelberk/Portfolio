@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { scroller } from "react-scroll";
 
-const Homepage = () => {
+const Homepage = (tech, stack) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [hasAnimated, setHasAnimated] = useState(
     sessionStorage.getItem("hasAnimated") === "true"
@@ -171,13 +171,15 @@ const Homepage = () => {
       <div className="projects-page" id="projects">
         <h1>Projects</h1>
         <div className="projects-container">
-          <article className="project">
+          <article className="project" >
             <div className="img-container">
               <img src="flagproject1.png" alt="" className="project-img" />
               <div className="img-overlay"></div>
             </div>
-            <div className="project-text">
-              <h2>Country Facts</h2>
+            <div className="project-text-right">
+              <h2 className="project-title">Country Facts</h2>
+              <h3 className="project-description-l">Database of all the worlds countries.</h3>
+              
               <Button
                 className="intro-button"
                 onClick={() => handleReadMore("/projects/countryfacts")}
@@ -193,8 +195,9 @@ const Homepage = () => {
               <img src="spotifyclone1.png" alt="" className="project-img" />
               <div className="img-overlay"></div>
             </div>
-            <div className="project-text">
-              <h2>Spotify Clone</h2>
+            <div className="project-text-left">
+              <h2 className="project-title">Spotify Clone</h2>
+              <h3 className="project-description-l">With basic functionality, scroll among saved playlists and play whatever fits the mood.</h3>
               <Button
                 className="intro-button"
                 onClick={() => handleReadMore("/projects/spotifyclone")}
@@ -210,8 +213,9 @@ const Homepage = () => {
               <img src="pw-gen1.png" alt="" className="project-img" />
               <div className="img-overlay"></div>
             </div>
-            <div className="project-text">
-              <h2>Password Generator</h2>
+            <div className="project-text-right">
+              <h2 className="project-title">Password Generator</h2>
+              <h3 className="project-description-l"></h3>
               <Button
                 className="intro-button"
                 onClick={() => handleReadMore("/projects/pwgen")}
@@ -227,8 +231,9 @@ const Homepage = () => {
               <img src="advicegen1.png" alt="" className="project-img" />
               <div className="img-overlay"></div>
             </div>
-            <div className="project-text">
-              <h2>Advice Generator</h2>
+            <div className="project-text-left">
+              <h2 className="project-title">Advice Generator</h2>
+              <h3 className="project-description-l"></h3>
               <Button
                 className="intro-button"
                 onClick={() => handleReadMore("/projects/advicegen")}
