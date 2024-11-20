@@ -3,8 +3,11 @@ import { useEffect, useState } from "react";
 import { Button } from "@mui/material";
 import { useNavigate, useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
+import TechStack from "../Components/TechStack";
+import projects from "../projectData";
 
-const Homepage = (tech, stack) => {
+const Homepage = () => {
+
   const buttonStyle = { backgroundColor: "aquamarine", color: "black", font: "inherit" };
 
   const location = useLocation()
@@ -172,84 +175,34 @@ const Homepage = (tech, stack) => {
         </div>
       </div>
       <hr className="divider" />
-      <div className="projects-page" id="projects">
-        <h1>Projects</h1>
-        <div className="projects-container">
-          <article className="project-left" >
-            <div className="img-container">
-              <img src="flagproject1.png" alt="" className="project-img" />
-              <div className="img-overlay"></div>
-            </div>
-            <div className="project-left-text">
-              <h2 className="project-title">Country Facts</h2>
-              <h3 className="project-description-l">Database of all the worlds countries, with detail for each as well as filter functionality.</h3>
-              
-              <Button
-                className="intro-button"
-                onClick={() => handleReadMore("/projects/countryfacts")}
-                variant="contained"
-                sx={buttonStyle}
-              >
-                Read more
-              </Button>
-            </div>
-          </article>
-          <article className="project-right">
-            <div className="img-container">
-              <img src="spotifyclone1.png" alt="" className="project-img" />
-              <div className="img-overlay"></div>
-            </div>
-            <div className="project-right-text">
-              <h2 className="project-title">Spotify Clone</h2>
-              <h3 className="project-description-l">With basic functionality, scroll among saved playlists and play whatever fits the mood.</h3>
-              <Button
-                className="intro-button"
-                onClick={() => handleReadMore("/projects/spotifyclone")}
-                variant="contained"
-                sx={buttonStyle}
-              >
-                Read more
-              </Button>
-            </div>
-          </article>
-          <article className="project-left">
-            <div className="img-container">
-              <img src="pw-gen1.png" alt="" className="project-img" />
-              <div className="img-overlay"></div>
-            </div>
-            <div className="project-left-text">
-              <h2 className="project-title">Password Generator</h2>
-              <h3 className="project-description-l">Choose between four different criteria, randomly generate a password, and copy the result if needed.</h3>
-              <Button
-                className="intro-button"
-                onClick={() => handleReadMore("/projects/pwgen")}
-                variant="contained"
-                sx={buttonStyle}
-              >
-                Read more
-              </Button>
-            </div>
-          </article>
-          <article className="project-right">
-            <div className="img-container">
-              <img src="advicegen1.png" alt="" className="project-img" />
-              <div className="img-overlay"></div>
-            </div>
-            <div className="project-right-text">
-              <h2 className="project-title">Advice Generator</h2>
-              <h3 className="project-description-l">Randomly generate advice, and copy to spread if particularly inspired!</h3>
-              <Button
-                className="intro-button"
-                onClick={() => handleReadMore("/projects/advicegen")}
-                variant="contained"
-                sx={buttonStyle}
-              >
-                Read more
-              </Button>
-            </div>
-          </article>
-        </div>
+
+      <div className="projects-container">
+  {projects.map((project, index) => (
+    <article
+      key={project.id}
+      className={index % 2 === 0 ? "project-left" : "project-right"}
+    >
+      <div className="img-container">
+        <img src={project.image} alt="" className="project-img" />
+        <div className="img-overlay"></div>
       </div>
+      <div className={index % 2 === 0 ? "project-left-text" : "project-right-text"}>
+        <h2 className="project-title">{project.title}</h2>
+        <h3 className="project-description-l">{project.description}</h3>
+        <TechStack stack={project.stack} />
+        <Button
+          className="intro-button"
+          onClick={() => handleReadMore(project.route)}
+          variant="contained"
+          sx={buttonStyle}
+        >
+          Read more
+        </Button>
+      </div>
+    </article>
+  ))}
+</div>
+
       <hr className="divider" />
       <div className="Contact" id="contact">
         <h3>Contact & Links</h3>

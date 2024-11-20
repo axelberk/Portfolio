@@ -3,6 +3,7 @@ import "./ProjectDetail.css"
 import { Button } from "@mui/material"
 import { useNavigate } from "react-router-dom"
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
+import TechStack from "../TechStack";
 
     const ProjectDetail = ({title, description, mainImage, secondImage, stack, projectLink, projectGithub}) => {
         const buttonStyle = { backgroundColor: "aquamarine", color: "black", font: "inherit" };
@@ -31,11 +32,7 @@ import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutl
                         
                         <div className="made-with">
                             <p>Made with:</p>
-                            <div className="stacks-used">
-                                {stack.map((tech, index) => (
-                                    <div key={index} className="chip">{tech}</div>
-                                ))}
-                            </div>
+                            <TechStack stack={stack}/>
                         </div>
                         <div className="project-links">
                             <Button className="project-link-button" href={projectLink} variant="contained" target="_blank" sx={{width:"120px", backgroundColor:"aquamarine", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit"}}>Try it<i class="fa fa-external-link" aria-hidden="true"></i></Button>
