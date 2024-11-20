@@ -2,6 +2,7 @@
     display: flex;
     gap: 10px;
     height: 40px;
+    margin-bottom: 10px;
 }
 
 .stacks-used p {
@@ -13,7 +14,7 @@
     box-shadow: 1px 1px 2px black;
     border-radius: 10px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
     background-color: aquamarine;
     color: black;
     font-weight: 400;

@@ -275,6 +275,7 @@
 
 .img-container {
     position: relative;
+    overflow: hidden;
 }
 
 .img-overlay {
@@ -288,20 +289,35 @@
     height: 100%;
     border-radius: 10px;
     transition: 0.5s;
+    z-index: 2;
+    transition: opacity 0.5s ease;
 }
 
 .img-overlay:hover {
     opacity: 0;
 }
 
+.img-overlay:hover .project-text-left {
+    transform: translateY(-50%) translateX(-150%);
+}
+
+.img-overlay:hover .project-text-right   {
+    transform: translateY(-50%) translateX(150%);
+}
+
 .project-left-text,
 .project-right-text {
+    position: absolute;
     background-color: #01003b;
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
     overflow: visible;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease;
 }
 
 .project-left-text .stacks-used {
@@ -309,7 +325,9 @@
 }
 
 .project-left-text {
+    right: 13%;
     text-align: right;
+    
 }
 
 .project-right-text .stacks-used {
@@ -318,13 +336,22 @@
 
 .project-right-text {
     text-align: left;
+    left: 13%;
 }
 
 .project-left-text:hover,
 .project-right-text:hover {
     background-color: #020120;
     transition: 0.8s;
-    backdrop-filter: blur(10px);
+    left: 25px;
+}
+
+.img-container:hover .project-left-text {
+    transform: translate(-150%, -50%);
+}
+
+.img-container:hover .project-right-text {
+    transform: translate(150%, -50%);
 }
 
 .project-title {
@@ -337,6 +364,7 @@
 .project-description-l {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    font-weight: 400;
 }
 
 .Contact {
