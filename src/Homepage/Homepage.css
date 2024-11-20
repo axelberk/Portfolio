@@ -55,7 +55,7 @@
 }
 
 .intro-text a {
-    text-decoration: none;;
+    text-decoration: none;
 }
 
 .buttons {
@@ -72,7 +72,7 @@
 
 .intro-button:hover {
     background-color: #01003b;
-    color:#ccd6f6;
+    color: #ccd6f6;
     border: 1px solid #ccd6f6;
 }
 
@@ -86,7 +86,7 @@
     font: inherit;
     font-size: 16px;
     font-weight: 500;
-    align-self: center
+    align-self: center;
 }
 
 .close-button:hover {
@@ -100,16 +100,16 @@
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     animation: fadeIn 1.5s ease-in forwards;
-  }
+}
 
-  @keyframes fadeIn {
+@keyframes fadeIn {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
 
 .chips-container {
     display: flex;
@@ -148,12 +148,12 @@
 .tooltip-container:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
-  }
+}
 
 .stack-logo {
     width: 100px;
     max-height: 100px;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     background-color: aquamarine;
     border-radius: 30%;
     padding: 4px;
@@ -162,11 +162,6 @@
 
 .stack-logo:hover {
     transform: scale(1.1);
-}
-
-.fontawesome-icon {
-    height: 50px;
-    width: 50px;
 }
 
 .about-container {
@@ -229,18 +224,6 @@
     width: 750px;
 }
 
-.about-container h1 {
-    text-align: center;
-}
-
-.projects-page {
-    padding: 10px;
-    border-radius: 10px;
-    opacity: 0;
-    animation: fadeIn 1.5s ease-in forwards;
-    animation-delay: 3s;
-}
-
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -261,7 +244,7 @@
 }
 
 .project-right {
-   flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .project-img {
@@ -275,34 +258,24 @@
 
 .img-container {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+    width: 65%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .img-overlay {
     position: absolute;
-    inset: 0px;
-    background-color: #05050599;
-    border-radius: 10px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    transition: 0.5s;
-    z-index: 2;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
     transition: opacity 0.5s ease;
+    z-index: 2;
+    opacity: 1;
+    border-radius: 10px;
 }
 
-.img-overlay:hover {
+.img-container:hover .img-overlay {
     opacity: 0;
-}
-
-.img-overlay:hover .project-text-left {
-    transform: translateY(-50%) translateX(-150%);
-}
-
-.img-overlay:hover .project-text-right   {
-    transform: translateY(-50%) translateX(150%);
 }
 
 .project-left-text,
@@ -312,46 +285,35 @@
     backdrop-filter: blur(10px);
     border-radius: 10px;
     padding: 20px;
-    width: 100%;
-    overflow: visible;
-    position: relative;
+    width: 50%;
     z-index: 3;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 1s ease;
-}
-
-.project-left-text .stacks-used {
-    justify-content: flex-end;
+    transition: transform 0.5s ease-in-out, background-color 0.8s;
+    opacity: 0.95;
 }
 
 .project-left-text {
-    right: 13%;
+    top: 25%;
+    left: 60%;
     text-align: right;
-    
-}
-
-.project-right-text .stacks-used {
-    justify-content: flex-start;
+    transform: translateX(30%);
 }
 
 .project-right-text {
+    top: 25%;
+    right: 100%;
     text-align: left;
-    left: 13%;
+    transform: translateX(40%);
 }
 
-.project-left-text:hover,
+.project-left-text:hover {
+    background-color: #020120;
+    transform: translateX(74%);
+}
+
 .project-right-text:hover {
     background-color: #020120;
-    transition: 0.8s;
-    left: 25px;
-}
-
-.img-container:hover .project-left-text {
-    transform: translate(-150%, -50%);
-}
-
-.img-container:hover .project-right-text {
-    transform: translate(150%, -50%);
+    transform: translateX(-1%);
 }
 
 .project-title {
@@ -376,7 +338,7 @@
 
 .ext-links {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     padding: 10px;
@@ -384,14 +346,9 @@
 
 .ext-links img {
     max-height: 50px;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .ext-links img:hover {
     transform: scale(1.3);
-}
-
-.ext-links img:hover::after {
-   width: 60%;
-   height: 60px;
 }

@@ -1,11 +1,13 @@
 import { scroller } from "react-scroll";
 import { useNavigate } from "react-router-dom";
+import { WidthFull } from "@mui/icons-material";
 
 export const buttonStyle = {
   backgroundColor: "aquamarine",
   color: "black",
   font: "inherit",
   borderRadius: "10px",
+  
 };
 
 export const useNavigationHandlers = (location) => {

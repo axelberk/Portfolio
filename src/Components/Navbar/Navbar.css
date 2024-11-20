@@ -55,14 +55,14 @@
     display:flex;
     justify-content: space-around;
     cursor: pointer;
+    padding: 10px 15px;
     background-color: aquamarine;
-    font: inherit;
-    padding: 1px;
 }
 
 .cv-button:hover {
     background-color: #01003b;
     color: #ccd6f6;
+    border: 1px solid #ccd6f6;
 }
 
 .page-routes {

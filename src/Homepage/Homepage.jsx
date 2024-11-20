@@ -135,28 +135,25 @@ const Homepage = () => {
       <div className="projects-container" id="projects">
         <h1>Projects</h1>
   {projects.map((project, index) => (
-    <article
-      key={project.id}
-      className={index % 2 === 0 ? "project-left" : "project-right"}
-    >
-      <div className="img-container">
-        <img src={project.image} alt="" className="project-img" />
-        <div className="img-overlay"></div>
-      </div>
-      <div className={index % 2 === 0 ? "project-left-text" : "project-right-text"}>
-        <h2 className="project-title">{project.title}</h2>
-        <h3 className="project-description-l">{project.description}</h3>
-          <TechStack stack={project.stack} />
-        <Button
-          className="intro-button"
-          onClick={() => handleReadMore(project.route)}
-          variant="contained"
-          sx={buttonStyle}
-        >
-          Read more
-        </Button>
-      </div>
-    </article>
+   <article className={index % 2 === 0 ? "project-left" : "project-right"}>
+   <div className="img-container">
+     <img src={project.image} alt="" className="project-img" />
+     <div className="img-overlay"></div>
+     <div className={index % 2 === 0 ? "project-left-text" : "project-right-text"}>
+       <h2 className="project-title">{project.title}</h2>
+       <h3 className="project-description-l">{project.description}</h3>
+       <TechStack stack={project.stack} />
+       <Button
+         className="intro-button"
+         onClick={() => handleReadMore(project.route)}
+         variant="contained"
+         sx={buttonStyle}
+       >
+         Read more
+       </Button>
+     </div>
+   </div>
+ </article>
   ))}
 </div>
 
