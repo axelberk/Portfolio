@@ -33,7 +33,7 @@ const projects = [
         "Randomly generate advice, and copy to spread if particularly inspired!",
       image: "advicegen1.png",
       route: "/projects/advicegen",
-      stack: ["HTML", "CSS", "Rest API"],
+      stack: ["JavaScript", "HTML", "CSS", "Rest API"],
     },
   ];
   

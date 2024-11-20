@@ -5,6 +5,12 @@
     padding-left: 6px;
 }
 
+.back-button:hover {
+    background-color: #01003b;
+    color: #ccd6f6;
+    border: 1px solid #ccd6f6;
+}
+
 .project-detail {
     height: 100%;
     display: flex;
@@ -58,10 +64,6 @@
     font-size: 18px;
 }
 
-.made-with {
-    flex-direction: row;
-}
-
 .stacks-used {
     display: flex;
     gap: 10px;
@@ -92,5 +94,6 @@
 .project-link-button:hover {
     background-color: #01003b;
     color: inherit;
+    border: 1px solid #ccd6f6;
 }
 

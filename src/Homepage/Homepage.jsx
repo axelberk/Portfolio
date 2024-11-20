@@ -3,12 +3,12 @@ import { useEffect, useState } from "react";
 import { Button } from "@mui/material";
 import { useNavigate, useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
-import TechStack from "../Components/TechStack";
+import TechStack from "../Components/TechStack/TechStack";
 import projects from "../projectData";
 
 const Homepage = () => {
 
-  const buttonStyle = { backgroundColor: "aquamarine", color: "black", font: "inherit" };
+  const buttonStyle = { backgroundColor: "aquamarine", color: "black", font: "inherit", borderRadius:"10px" };
 
   const location = useLocation()
   
@@ -32,18 +32,6 @@ const Homepage = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
-
-  // useEffect(() => {
-  //   if (isModalOpen) {
-  //     document.body.style.overflow = "hidden"
-  //   } else {
-  //     document.body.style.overflow = ""
-  //   }
-
-  //   return () => {
-  //     document.body.style.overflow = "";
-  //   }
-  // }, [isModalOpen])
 
   const navigate = useNavigate();
 
@@ -94,7 +82,7 @@ const Homepage = () => {
               className="project-button"
               onClick={() => handleNavClick("projects")}
               variant="contained"
-              sx={{backgroundColor:"#01003b", color:"#ccd6f6", font:"inherit", border:"1px solid #ccd6f6"}}
+              sx={{backgroundColor:"#01003b", color:"#ccd6f6", font:"inherit", border:"1px solid #ccd6f6", borderRadius:"10px"}}
             >
               Projects
             </Button>
@@ -120,7 +108,7 @@ const Homepage = () => {
                   className="close-button"
                   variant="outlined"
                   onClick={closeModal}
-                  sx={{backgroundColor:"aquamarine", color:"#01003b"}}
+                  sx={{backgroundColor:"aquamarine", color:"#01003b", fontFamily:"inherit", fontSize:"18px"}}
                 >
                   Close
                 </Button>
@@ -176,7 +164,8 @@ const Homepage = () => {
       </div>
       <hr className="divider" />
 
-      <div className="projects-container">
+      <div className="projects-container" id="projects">
+        <h1>Projects</h1>
   {projects.map((project, index) => (
     <article
       key={project.id}
@@ -189,7 +178,7 @@ const Homepage = () => {
       <div className={index % 2 === 0 ? "project-left-text" : "project-right-text"}>
         <h2 className="project-title">{project.title}</h2>
         <h3 className="project-description-l">{project.description}</h3>
-        <TechStack stack={project.stack} />
+          <TechStack stack={project.stack} />
         <Button
           className="intro-button"
           onClick={() => handleReadMore(project.route)}

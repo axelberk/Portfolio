@@ -320,21 +320,15 @@
 }
 
 .project-title {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .project-description-l {
-    font-size: 18px;
+    font-size: 1.2rem;
     margin-bottom: 10px;
 }
-
-/* .project-right:hover .img-overlay,
-.project-left:hover .img-overlay {
-    display: none;
-   
-} */
 
 .Contact {
     height: 150px;

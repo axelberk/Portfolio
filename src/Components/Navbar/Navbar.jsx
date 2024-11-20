@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from "react-router-dom"
 import "./Navbar.css"
 
 const Navbar = () => {
-    const buttonStyle = { backgroundColor: "aquamarine", color: "black", font: "inherit" };
+    const buttonStyle = { backgroundColor: "aquamarine", color: "#01003b", font: "inherit", borderRadius:"10px" };
     
     const navigate = useNavigate()
     const location = useLocation()
@@ -39,6 +39,7 @@ const Navbar = () => {
                 <Link onClick={() => handleNavClick("projects")} className="link">Projects</Link>|
                 <Link onClick={() => handleNavClick("contact")} className="link">Contact</Link>
                 <Button
+                style={buttonStyle}
               className="cv-button"
               href=""
               variant="contained"
