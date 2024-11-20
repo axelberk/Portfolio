@@ -304,8 +304,16 @@
     overflow: visible;
 }
 
+.project-left-text .stacks-used {
+    justify-content: flex-end;
+}
+
 .project-left-text {
     text-align: right;
+}
+
+.project-right-text .stacks-used {
+    justify-content: flex-start;
 }
 
 .project-right-text {
@@ -323,6 +331,7 @@
     font-size: 1.7rem;
     font-weight: bold;
     margin-bottom: 10px;
+    margin-top: 0;
 }
 
 .project-description-l {

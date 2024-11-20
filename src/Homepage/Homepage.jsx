@@ -5,58 +5,26 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
 import TechStack from "../Components/TechStack/TechStack";
 import projects from "../projectData";
+import { buttonStyle, useNavigationHandlers } from "../utils";
+import { useModal } from "../useModal";
+
 
 const Homepage = () => {
 
-  const buttonStyle = { backgroundColor: "aquamarine", color: "black", font: "inherit", borderRadius:"10px" };
+  const location = useLocation();
+  const { handleNavClick, handleReadMore } = useNavigationHandlers(location);
+  const { isModalOpen, openModal, closeModal } = useModal();
 
-  const location = useLocation()
-  
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [hasAnimated, setHasAnimated] = useState(
     sessionStorage.getItem("hasAnimated") === "true"
-  )
+  );
 
   useEffect(() => {
     if (!hasAnimated) {
-      setHasAnimated(true)
-      sessionStorage.setItem("hasAnimated", "true")
+      setHasAnimated(true);
+      sessionStorage.setItem("hasAnimated", "true");
     }
-  }, [hasAnimated])
-
-  const openModal = (e) => {
-    e.preventDefault();
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
-  const navigate = useNavigate();
-
-  const handleNavClick = (sectionId) => {
-    if (location.pathname === "/") {
-      scroller.scrollTo(sectionId, {
-        smooth: true,
-        duration: 500,
-        offset: -70,
-      });
-    } else {
-      navigate("/");
-      setTimeout(() => {
-        scroller.scrollTo(sectionId, {
-          smooth: true,
-          duration: 500,
-          offset: -70,
-        });
-      }, 300);
-    }
-  };
-
-  const handleReadMore = (route) => {
-    navigate(route);
-  };
+  }, [hasAnimated]);
 
   return (
     <div className={`Homepage ${hasAnimated ? "no-animations" : ""}`} id="home">

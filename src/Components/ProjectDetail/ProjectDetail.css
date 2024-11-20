@@ -64,28 +64,6 @@
     font-size: 18px;
 }
 
-.stacks-used {
-    display: flex;
-    gap: 10px;
-    height: 40px;
-}
-
-.stacks-used p {
-    margin-top: 0;
-    flex-direction: row;
-}
-
-.chip {
-    box-shadow: 1px 1px 2px black;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 16px;
-    background-color: aquamarine;
-    color: black;
-    font-weight: 400;
-    width: 100%px;
-}
-
 .project-links {
     display: flex;
     gap: 10px;
