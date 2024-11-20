@@ -5,7 +5,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
 import TechStack from "../Components/TechStack/TechStack";
 import projects from "../projectData";
-import { buttonStyle, useNavigationHandlers } from "../Utils";
+import { buttonStyle, useNavigationHandlers } from "../utils";
 import { useModal } from "../useModal";
 
 
