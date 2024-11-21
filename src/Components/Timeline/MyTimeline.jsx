@@ -23,7 +23,6 @@ const MyTimeline = () => {
         <TimelineContent sx={textStyle}>
           <div className="event-item">
             <h4 className="event-year">January 1994</h4>
-            <h3 className="event-title">Born</h3>
             <p className="event-description">I was born</p>
           </div>
         </TimelineContent>
@@ -36,7 +35,6 @@ const MyTimeline = () => {
         <TimelineContent sx={textStyle}>
           <div className="event-item">
             <h4 className="event-year">June 1997</h4>
-            <h3 className="event-title">Moved</h3>
             <p className="event-description">I moved</p>
           </div>
         </TimelineContent>
@@ -49,7 +47,6 @@ const MyTimeline = () => {
         <TimelineContent sx={textStyle}>
           <div className="event-item">
             <h4 className="event-year">July 2004</h4>
-            <h3 className="event-title">Moved again</h3>
             <p className="event-description">I moved again</p>
           </div>
         </TimelineContent>
@@ -62,7 +59,6 @@ const MyTimeline = () => {
         <TimelineContent sx={textStyle}>
           <div className="event-item">
             <h4 className="event-year">December 2023</h4>
-            <h3 className="event-title">Started Techover</h3>
             <p className="event-description">
               I started learning web development with the help of Techover
               Academy.
@@ -73,16 +69,15 @@ const MyTimeline = () => {
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot sx={dotStyle} />
-          <TimelineConnector sx={connectorStyle} />
         </TimelineSeparator>
         <TimelineContent sx={textStyle}>
           <div className="event-item">
             <h4 className="event-year">November 2024</h4>
             
             <p className="event-description">
-              I finished the web development course at Techover Academy{" "}
+              I finished the web development course at Techover Academy and {" "}
               <a href="#" onClick={openModal}>
-                and received a certificate.
+                received a certificate.
               </a>
               {isModalOpen && (
                 <div className="modal" onClick={closeModal}>

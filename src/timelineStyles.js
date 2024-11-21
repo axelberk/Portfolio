@@ -13,7 +13,7 @@ export const dotStyle = {
 
 export const connectorStyle = {
     backgroundColor:"#ccd6f6",
-    height:"150px"
+    height:"120px"
 }
 
 

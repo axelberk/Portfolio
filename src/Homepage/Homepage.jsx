@@ -15,6 +15,7 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import MyTimeline from "../Components/Timeline/MyTimeline";
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 
 const Homepage = () => {
@@ -70,34 +71,15 @@ const Homepage = () => {
 
       <div className="about-container" id="about">
         <h1>The journey so far...</h1>
-        <MyTimeline/> 
+
+        <MyTimeline/>
         
-        {/* <h2>
-          Based in Stockholm, for a long time I was lost in the jungle of life
-          until I found my calling in code. Helped along by my friends over at{" "}
-          <a href="#" onClick={openModal}>
-            Techover Academy
-          </a>
-          {isModalOpen && (
-            <div className="modal" onClick={closeModal}>
-              <div className="modal-content" onClick={(e) => e.stopPropagation}>
-                <img src="techover-cert.png" alt="" />
-                <Button
-                  className="close-button"
-                  variant="outlined"
-                  onClick={closeModal}
-                  sx={{backgroundColor:"aquamarine", color:"#01003b", fontFamily:"inherit", fontSize:"18px"}}
-                >
-                  Close
-                </Button>
-              </div>
-            </div>
-          )}
-          , I recently completed their course in Web Development and am now
-          looking for my first position in the field. I'm eager to delve deeper
-          into all kinds of stacks and technologies, and below are a few I am
-          already familiar with.
-        </h2> */}
+      </div>
+      <div className="tech-stack-divider">
+          <ArrowDownwardIcon fontSize="large"/>
+          <h2>Some technologies I've worked with</h2>
+          <ArrowDownwardIcon fontSize="large"/>
+        </div>
         <div className="chips-container">
           <div className="tooltip-container">
             <img src="react-logo.png" alt="" className="stack-logo" />
@@ -139,7 +121,7 @@ const Homepage = () => {
             <span className="tooltip-text">Material UI</span>
           </div>
         </div>
-      </div>
+        <h2>I am eager to expand my horizons and learn all kinds of new techs!</h2>
       <hr className="divider" />
 
       <div className="projects-container" id="projects">
