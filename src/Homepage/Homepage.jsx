@@ -154,7 +154,7 @@ const Homepage = () => {
                 <h3 className="project-description-l">{project.description}</h3>
                 <TechStack stack={project.stack} />
                 <Button
-                  className="project-button"
+                  className="project-link-button"
                   onClick={() => handleReadMore(project.route)}
                   variant="contained"
                   sx={buttonStyle}
