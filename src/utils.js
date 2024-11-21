@@ -7,7 +7,8 @@ export const buttonStyle = {
   color: "black",
   font: "inherit",
   borderRadius: "10px",
-  
+  transition: "all 0.4s ease",
+  border:"1px solid transparent"
 };
 
 export const useNavigationHandlers = (location) => {

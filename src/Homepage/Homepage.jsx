@@ -42,7 +42,7 @@ const Homepage = () => {
               className="intro-button"
               onClick={() => handleNavClick("about")}
               variant="contained"
-              sx={buttonStyle}
+              sx={{backgroundColor:"#01003b", color:"#ccd6f6", font:"inherit", border:"1px solid #ccd6f6", borderRadius:"10px"}}
             >
               About me
             </Button>
@@ -50,7 +50,7 @@ const Homepage = () => {
               className="project-button"
               onClick={() => handleNavClick("projects")}
               variant="contained"
-              sx={{backgroundColor:"#01003b", color:"#ccd6f6", font:"inherit", border:"1px solid #ccd6f6", borderRadius:"10px"}}
+              sx={buttonStyle}
             >
               Projects
             </Button>
@@ -144,7 +144,7 @@ const Homepage = () => {
        <h3 className="project-description-l">{project.description}</h3>
        <TechStack stack={project.stack} />
        <Button
-         className="intro-button"
+         className="project-button"
          onClick={() => handleReadMore(project.route)}
          variant="contained"
          sx={buttonStyle}

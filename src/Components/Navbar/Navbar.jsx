@@ -39,7 +39,6 @@ const Navbar = () => {
                 <Link onClick={() => handleNavClick("projects")} className="link">Projects</Link>|
                 <Link onClick={() => handleNavClick("contact")} className="link">Contact</Link>
                 <Button
-                // style={buttonStyle}
               className="cv-button"
               href=""
               variant="contained"

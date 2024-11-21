@@ -6,7 +6,7 @@ import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutl
 import TechStack from "../TechStack/TechStack";
 
     const ProjectDetail = ({title, description, mainImage, secondImage, stack, projectLink, projectGithub}) => {
-        const buttonStyle = { width:"130px", backgroundColor:"aquamarine", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit" };
+        const buttonStyle = { width:"130px", backgroundColor:"aquamarine", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit", transition: "all 0.4s ease", border:"1px solid transparent" };
 
         const navigate = useNavigate()
 

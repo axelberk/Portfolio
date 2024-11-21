@@ -64,21 +64,18 @@
 }
 
 .intro-button {
-    background-color: aquamarine;
-    font: inherit;
-    width: 130px;
-    border-radius: 10px;
+    border: 1px solid transparent;
 }
 
 .intro-button:hover {
-    background-color: #01003b;
-    color: #ccd6f6;
-    border: 1px solid #ccd6f6;
+    background-color: aquamarine;
+    color: #01003b;
 }
 
 .project-button:hover {
-    background-color: aquamarine;
-    color: #01003b;
+    background-color: #01003b;
+    color: #ccd6f6;
+    border: 1px solid #ccd6f6;
 }
 
 .close-button {
@@ -290,12 +287,15 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.5s ease-in-out, background-color 0.8s;
     opacity: 0.95;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-left-text {
     top: 25%;
     left: 60%;
     text-align: right;
+    align-items: flex-end;
     transform: translateX(30%);
 }
 
@@ -304,6 +304,7 @@
     right: 100%;
     text-align: left;
     transform: translateX(40%);
+    align-items: flex-start;
 }
 
 .project-left-text:hover {
