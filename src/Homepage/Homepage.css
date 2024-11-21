@@ -207,30 +207,6 @@
     background-color: #ccd6f6;
 }
 
-.modal {
-    position: fixed;
-    top: 80px;
-    left: 400px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.modal-content {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 10px;
-    position: relative;
-}
-
-.modal-content img {
-    width: 750px;
-}
-
 .projects-container {
     display: flex;
     flex-direction: column;

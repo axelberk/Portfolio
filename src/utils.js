@@ -1,6 +1,5 @@
 import { scroller } from "react-scroll";
 import { useNavigate } from "react-router-dom";
-import { WidthFull } from "@mui/icons-material";
 
 export const buttonStyle = {
   backgroundColor: "aquamarine",
@@ -21,6 +20,7 @@ export const useNavigationHandlers = (location) => {
         duration: 500,
         offset: -70,
       });
+
     } else {
       navigate("/");
       setTimeout(() => {

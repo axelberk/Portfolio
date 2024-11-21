@@ -1,10 +1,11 @@
 export const textStyle = {
     color:"#ccd6f6",
-    fontSize:"18px"
+    fontSize:"18px",
+    fontFamily:"inherit"
 }
 
 export const dotStyle = {
-    backgroundColor:"#ccd6f6",
+    backgroundColor:"aquamarine",
     color:"#ccd6f6",
     height:"4px",
     width:"4px"

@@ -1,0 +1,54 @@
+.timeline-container {
+    font-family: "IBM Plex Sans";
+    cursor:default;
+}
+
+.event-item {
+    height: 100%px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out, background-color 0.8s;
+    padding: 10px;
+    margin-top: -12px;
+}
+
+.event-item:hover {
+    background-color: #020120;
+}
+
+.event-year {
+    margin: 0;
+    font-weight: 400;
+}
+
+.event-title {
+    margin: 0;
+}
+
+.event-description {
+    margin: 0;
+}
+
+.modal {
+    position: fixed;
+    top: 80px;
+    left: 400px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modal-content img {
+    width: 750px;
+}
