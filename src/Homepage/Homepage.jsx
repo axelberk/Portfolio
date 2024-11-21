@@ -7,6 +7,14 @@ import TechStack from "../Components/TechStack/TechStack";
 import projects from "../projectData";
 import { buttonStyle, useNavigationHandlers } from "../utils";
 import { useModal } from "../useModal";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import MyTimeline from "../Components/Timeline/MyTimeline";
 
 
 const Homepage = () => {
@@ -61,8 +69,10 @@ const Homepage = () => {
       <hr className="divider" />
 
       <div className="about-container" id="about">
-        <h1>Who am I?</h1>
-        <h2>
+        <h1>The journey so far...</h1>
+        <MyTimeline/> 
+        
+        {/* <h2>
           Based in Stockholm, for a long time I was lost in the jungle of life
           until I found my calling in code. Helped along by my friends over at{" "}
           <a href="#" onClick={openModal}>
@@ -87,7 +97,7 @@ const Homepage = () => {
           looking for my first position in the field. I'm eager to delve deeper
           into all kinds of stacks and technologies, and below are a few I am
           already familiar with.
-        </h2>
+        </h2> */}
         <div className="chips-container">
           <div className="tooltip-container">
             <img src="react-logo.png" alt="" className="stack-logo" />

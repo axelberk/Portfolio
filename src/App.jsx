@@ -74,10 +74,10 @@ function App() {
             element={
               <ProjectDetail
                 title="Advice Generator"
-                description="Random advice generated from an API."
+                description="Random advice generated from a Rest API. Comes with button to copy the quote to your clipboard and paste it to send to friends, family or colleagues to help motivate or inspire them."
                 mainImage="/advicelaptop.png"
                 secondImage="/advicephone.png"
-                stack={["JavaScript", "HTML", "CSS"]}
+                stack={["JavaScript", "HTML", "CSS", "Rest API"]}
                 projectLink="https://randomadvice-gen.netlify.app/"
                 projectGithub="https://github.com/axelberk/advicegen"
               />
