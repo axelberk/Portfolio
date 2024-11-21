@@ -1,0 +1,18 @@
+export const textStyle = {
+    color:"#ccd6f6",
+    fontSize:"18px"
+}
+
+export const dotStyle = {
+    backgroundColor:"#ccd6f6",
+    color:"#ccd6f6",
+    height:"4px",
+    width:"4px"
+}
+
+export const connectorStyle = {
+    backgroundColor:"#ccd6f6",
+    height:"150px"
+}
+
+

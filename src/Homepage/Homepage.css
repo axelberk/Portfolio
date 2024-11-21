@@ -171,6 +171,10 @@
     animation-delay: 3s;
 }
 
+.about-container h1 {
+    font-size: 40px;
+}
+
 .about-container a {
     color: aquamarine;
     text-decoration: none;
@@ -232,6 +236,10 @@
     flex-direction: column;
     gap: 40px;
     margin: 0 auto;
+}
+
+.projects-container h1 {
+    font-size: 40px;
 }
 
 .project-left,
