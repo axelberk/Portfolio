@@ -35,8 +35,14 @@
 
 .hero-name {
     font-size: 60px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.hero-profession {
+    color: aquamarine;
+    font-size: 50px;
+    margin: 0;
 }
 
 .hero-desc {
@@ -52,6 +58,7 @@
     opacity: 0;
     animation: fadeIn 1.5s ease-in forwards;
     animation-delay: 1.5s;
+    gap: 2px;
 }
 
 .intro-text a {
@@ -60,7 +67,7 @@
 
 .buttons {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .intro-button {
@@ -73,9 +80,8 @@
 }
 
 .project-button:hover {
-    background-color: #01003b;
-    color: #ccd6f6;
-    border: 1px solid #ccd6f6;
+    
+    transform: scale(1.2);
 }
 
 .close-button {
@@ -112,7 +118,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    padding: 20px 0px;
+    padding: 0px;
     max-width: 100%;
     gap: 10px;
     opacity: 0;
@@ -171,6 +177,11 @@
     opacity: 0;
     animation: fadeIn 1.5s ease-in forwards;
     animation-delay: 3s;
+}
+
+.about-description {
+    font-size: 20px;
+    text-align: left;
 }
 
 .tech-stack-divider {

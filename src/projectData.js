@@ -3,7 +3,7 @@ const projects = [
       id: "countryfacts",
       title: "Country Facts",
       description:
-        "Database of all the world's countries, with details for each and filter functionality.",
+        "Database of all the world's countries, with details for each and with filter functionality.",
       image: "flagproject1.png",
       route: "/projects/countryfacts",
       stack: ["React", "JavaScript", "CSS", "Rest API", "Material UI"],

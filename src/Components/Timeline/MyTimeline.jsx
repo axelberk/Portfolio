@@ -46,8 +46,8 @@ const MyTimeline = () => {
         </TimelineSeparator>
         <TimelineContent sx={textStyle}>
           <div className="event-item">
-            <h4 className="event-year">July 2004</h4>
-            <p className="event-description">I moved again</p>
+            <h4 className="event-year">March 2023</h4>
+            <p className="event-description">I wanted to start learning how to code and was recommended to begin with Python.</p>
           </div>
         </TimelineContent>
       </TimelineItem>
@@ -60,8 +60,7 @@ const MyTimeline = () => {
           <div className="event-item">
             <h4 className="event-year">December 2023</h4>
             <p className="event-description">
-              I started learning web development with the help of Techover
-              Academy.
+              Enrolled in <span style={{color:"aquamarine"}}>Techover Academy</span> and started learning the basics of web development.
             </p>
           </div>
         </TimelineContent>
@@ -75,10 +74,10 @@ const MyTimeline = () => {
             <h4 className="event-year">November 2024</h4>
             
             <p className="event-description">
-              I finished the web development course at Techover Academy and {" "}
+              Finished the web development program at Techover Academy and {" "}
               <a href="#" onClick={openModal}>
-                received a certificate.
-              </a>
+                received a certificate
+              </a>.
               {isModalOpen && (
                 <div className="modal" onClick={closeModal}>
                   <div
