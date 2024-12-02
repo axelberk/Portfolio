@@ -67,7 +67,7 @@ const Homepage = () => {
 
       <hr className="divider" />
 
-      <h1 style={{ margin: "0" }}>The journey so far...</h1>
+      <h1 style={{ margin: "0" }}>The journey so far</h1>
 
       <MyTimeline />
 

@@ -15,7 +15,7 @@ const MyTimeline = () => {
 
   return (
     <Timeline position="alternate-reverse" className="timeline-container">
-      <TimelineItem>
+      {/* <TimelineItem>
         <TimelineSeparator>
           <TimelineDot sx={dotStyle} />
           <TimelineConnector sx={connectorStyle} />
@@ -38,7 +38,7 @@ const MyTimeline = () => {
             <p className="event-description">I moved</p>
           </div>
         </TimelineContent>
-      </TimelineItem>
+      </TimelineItem> */}
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot sx={dotStyle} />
@@ -47,7 +47,7 @@ const MyTimeline = () => {
         <TimelineContent sx={textStyle}>
           <div className="event-item">
             <h4 className="event-year">March 2023</h4>
-            <p className="event-description">I wanted to start learning how to code and was recommended to begin with Python.</p>
+            <p className="event-description">I wanted to start learning how to code and was recommended to begin with Python. This sparked a genuine interest that has since flourished.</p>
           </div>
         </TimelineContent>
       </TimelineItem>
