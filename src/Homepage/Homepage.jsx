@@ -44,7 +44,7 @@ const Homepage = () => {
               onClick={() => handleNavClick("about")}
               variant="contained"
               sx={{
-                backgroundColor: "#01003b",
+                backgroundColor: "#0a192f",
                 color: "#ccd6f6",
                 font: "inherit",
                 border: "1px solid #ccd6f6",

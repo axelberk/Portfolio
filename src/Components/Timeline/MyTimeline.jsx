@@ -26,7 +26,7 @@ const MyTimeline = () => {
             <p className="event-description">I was born</p>
           </div>
         </TimelineContent>
-      </TimelineItem>
+      </TimelineItem> */}
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot sx={dotStyle} />
@@ -34,11 +34,11 @@ const MyTimeline = () => {
         </TimelineSeparator>
         <TimelineContent sx={textStyle}>
           <div className="event-item">
-            <h4 className="event-year">June 1997</h4>
-            <p className="event-description">I moved</p>
+            <h4 className="event-year">March 2020</h4>
+            <p className="event-description">Started working at foodora, a fast paced and fast growing food delivery company. </p>
           </div>
         </TimelineContent>
-      </TimelineItem> */}
+      </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot sx={dotStyle} />
@@ -51,7 +51,7 @@ const MyTimeline = () => {
           </div>
         </TimelineContent>
       </TimelineItem>
-      <TimelineItem>
+      {/* <TimelineItem>
         <TimelineSeparator>
           <TimelineDot sx={dotStyle} />
           <TimelineConnector sx={connectorStyle} />
@@ -64,7 +64,7 @@ const MyTimeline = () => {
             </p>
           </div>
         </TimelineContent>
-      </TimelineItem>
+      </TimelineItem> */}
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot sx={dotStyle} />
@@ -74,7 +74,7 @@ const MyTimeline = () => {
             <h4 className="event-year">November 2024</h4>
             
             <p className="event-description">
-              Finished the web development program at Techover Academy and received a {" "}
+              Finished the web development program at <span style={{color:"aquamarine"}}>Techover Academy</span> and received a {" "}
               <a href="#" onClick={openModal}>
                 certificate
               </a>.
