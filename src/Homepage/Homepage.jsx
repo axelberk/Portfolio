@@ -102,12 +102,12 @@ const Homepage = () => {
         </div>
 
         <div className="tooltip-container">
-          <img src="html-logo.png" alt="" className="stack-logo" />
+          <img src="html-logo2.png" alt="" className="stack-logo" />
           <span className="tooltip-text">HTML</span>
         </div>
 
         <div className="tooltip-container">
-          <img src="css-logo.png" alt="" className="stack-logo" />
+          <img src="css-logo1.png" alt="" className="stack-logo" />
           <span className="tooltip-text">CSS</span>
         </div>
 

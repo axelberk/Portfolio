@@ -76,7 +76,7 @@
 
 .intro-button:hover {
     background-color: aquamarine;
-    color: #01003b;
+    color: #0a192f;
 }
 
 .project-button:hover {
@@ -93,7 +93,7 @@
 }
 
 .close-button:hover {
-    background-color: #01003b;
+    background-color: #0a192f;
     color: #ccd6f6;
 }
 
