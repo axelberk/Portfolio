@@ -74,9 +74,9 @@ const MyTimeline = () => {
             <h4 className="event-year">November 2024</h4>
             
             <p className="event-description">
-              Finished the web development program at Techover Academy and {" "}
+              Finished the web development program at Techover Academy and received a {" "}
               <a href="#" onClick={openModal}>
-                received a certificate
+                certificate
               </a>.
               {isModalOpen && (
                 <div className="modal" onClick={closeModal}>

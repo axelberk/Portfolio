@@ -21,7 +21,7 @@ const projects = [
       id: "pwgen",
       title: "Password Generator",
       description:
-        "Choose between four different criteria, randomly generate a password, and copy the result if needed.",
+        "Choose between four different criteria, randomly generate a password, and copy the result if desired.",
       image: "pw-gen1.png",
       route: "/projects/pwgen",
       stack: ["JavaScript", "HTML", "CSS"],

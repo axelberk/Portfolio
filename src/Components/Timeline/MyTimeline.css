@@ -14,7 +14,7 @@
 
 .event-item:hover {
     background-color: #020120;
-    transform: scale(1.1);
+    
 }
 
 .event-year {
@@ -65,6 +65,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    transform: none !important;
 }
 
 .modal-content {
@@ -73,8 +74,16 @@
     padding: 20px;
     border-radius: 10px;
     position: relative;
+    transform: none !important;
+    z-index: 1000;
 }
 
 .modal-content img {
     width: 750px;
+    transform: none;
+}
+
+.modal-content:hover {
+    transform: none;
+    z-index: 1000;
 }
