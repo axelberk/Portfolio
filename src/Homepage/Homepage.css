@@ -283,8 +283,17 @@
     border-radius: 10px;
 }
 
-.img-container:hover .img-overlay {
+.project-left:hover .img-overlay,
+.project-right:hover .img-overlay {
     opacity: 0;
+}
+
+.project-left:hover .project-left-text {
+    transform: translateX(75%);
+}
+
+.project-right:hover  .project-right-text {
+    transform: translateX(-1%);
 }
 
 .project-left-text,
@@ -317,16 +326,6 @@
     text-align: left;
     transform: translateX(40%);
     align-items: flex-start;
-}
-
-.project-left-text:hover {
-    
-    transform: translateX(75%);
-}
-
-.project-right-text:hover {
-   
-    transform: translateX(-1%);
 }
 
 .project-title {
