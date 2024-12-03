@@ -87,3 +87,28 @@
     transform: none;
     z-index: 1000;
 }
+
+@media (max-width: 768px) {
+    .timeline-container {
+      padding: 10px;
+    }
+  
+    .event-item {
+      box-shadow: none;
+      padding: 8px;
+      transform: none; 
+      margin-top: -5px;
+    }
+  
+    .event-year {
+      font-size: 14px;
+    }
+  
+    .event-description {
+      font-size: 12px;
+    }
+  
+    .modal-content img {
+      width: 100%; 
+    }
+  }

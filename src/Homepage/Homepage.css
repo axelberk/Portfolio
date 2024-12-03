@@ -387,4 +387,17 @@
     .pfp {
         height: 300px;
     }
+
+    .about-container {
+        padding: 20px;
+    }
+
+    .tech-stack-divider {
+        padding: 12px;
+    }
+
+    .chips-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
 }
