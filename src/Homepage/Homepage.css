@@ -364,3 +364,27 @@
 .ext-links img:hover {
     transform: scale(1.3);
 }
+
+@media (max-width: 768px) {
+    .intro-section {
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    .hero-name {
+        font-size: 40px;
+    }
+
+    .hero-profession {
+        font-size: 38px;
+    }
+
+    .hero-desc {
+        font-size: 16px;
+    }
+
+    .pfp {
+        height: 300px;
+    }
+}

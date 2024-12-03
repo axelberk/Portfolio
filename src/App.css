@@ -27,3 +27,8 @@ html, body {
   color: #ccd6f6;
 }
 
+@media (max-width: 768px) {
+  .App {
+    padding: 7px;
+  }
+}

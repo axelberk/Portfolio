@@ -35,7 +35,7 @@ const MyTimeline = () => {
         <TimelineContent sx={textStyle}>
           <div className="event-item">
             <h4 className="event-year">March 2020</h4>
-            <p className="event-description">Started working at foodora, a fast paced and fast growing food delivery company. </p>
+            <p className="event-description">Started working at <span style={{color:"aquamarine"}}>foodora</span>, a fast paced and fast growing food delivery company. </p>
           </div>
         </TimelineContent>
       </TimelineItem>
@@ -47,7 +47,7 @@ const MyTimeline = () => {
         <TimelineContent sx={textStyle}>
           <div className="event-item">
             <h4 className="event-year">March 2023</h4>
-            <p className="event-description">I wanted to start learning how to code and was recommended to begin with Python. This sparked a genuine interest that has since flourished.</p>
+            <p className="event-description">I wanted to start learning how to code and was recommended to begin with Python. This sparked a genuine interest in programming that has flourished since then.</p>
           </div>
         </TimelineContent>
       </TimelineItem>

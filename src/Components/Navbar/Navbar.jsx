@@ -32,7 +32,7 @@ const Navbar = () => {
 
     return (
         <nav className="Navbar">
-            <a href="/">A.B</a>
+            <a href="/" className="page-name">A.B</a>
             <div className="page-routes">
                 <Link to="home" smooth={true} duration={500} offset={-110} activeClass="active-link" onClick={() => handleNavClick("home")} className="link">Home</Link>|
                 <Link onClick={() => handleNavClick("about")} className="link">About</Link>|
