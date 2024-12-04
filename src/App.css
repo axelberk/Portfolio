@@ -29,7 +29,7 @@ html, body {
 
 @media (max-width: 768px) {
   .App {
-    padding: 7px;
+    padding: 0;
     width: 100%;
   }
 }

@@ -59,6 +59,7 @@
     position: fixed;
     top: 80px;
     left: 400px;
+    transform: translate(-50%, -50%);
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -79,8 +80,9 @@
 }
 
 .modal-content img {
-    width: 750px;
+    width: 100%;
     transform: none;
+    max-width: 750px;
 }
 
 .modal-content:hover {
@@ -95,9 +97,9 @@
   
     .event-item {
       box-shadow: none;
-      padding: 8px;
+      padding: 0;
       transform: none; 
-      margin-top: -5px;
+      margin-top: 0px;
     }
   
     .event-year {
@@ -107,8 +109,24 @@
     .event-description {
       font-size: 12px;
     }
-  
-    .modal-content img {
-      width: 100%; 
+
+    .modal {
+        top: 200px;
+        left: 5px;
     }
+  
+    .modal-content {
+        padding: 0px; /* Reduce padding on smaller screens */
+        
+    }
+
+    .modal-content img {
+        width: 100%;
+       
+    }
+
+    .close-button {
+        font-size: 16px; /* Adjust button size for smaller screens */
+    }
+
   }
