@@ -35,7 +35,7 @@ const MyTimeline = () => {
         <TimelineContent sx={textStyle}>
           <div className="event-item">
             <h4 className="event-year">March 2020</h4>
-            <p className="event-description">Started working at <span style={{color:"aquamarine"}}>foodora</span>, a fast paced and fast growing food delivery company. </p>
+            <p className="event-description">Started working at <span style={{color:"aquamarine"}}>foodora</span>. Then a fast-growing food delivery company, that has since become the national leader in the market with a highly recognizable brand. </p>
           </div>
         </TimelineContent>
       </TimelineItem>

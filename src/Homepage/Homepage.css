@@ -399,5 +399,16 @@
     .chips-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        padding: 0px 50px;
+    }
+
+    .tooltip-text {
+        bottom: -8px;
+        z-index: 5;
+        left: 56px;
+    }
+
+    .stack-logo {
+        margin-bottom: 40px;
     }
 }

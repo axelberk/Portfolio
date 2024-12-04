@@ -55,7 +55,7 @@ const Navbar = () => {
         <nav className="Navbar">
             <a href="/" className="page-name">A.B</a>
             <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer(true)} className="menu-icon">
-                <MenuIcon></MenuIcon>
+                <MenuIcon/>
             </IconButton>
             <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
                 <List className="drawer-list">
@@ -96,10 +96,6 @@ const Navbar = () => {
                         {link.text}
                     </Link>
                 ))}
-                {/* <Link to="home" smooth={true} duration={500} offset={-110} activeClass="active-link" onClick={() => handleNavClick("home")} className="link">Home</Link>|
-                <Link onClick={() => handleNavClick("about")} className="link">About</Link>|
-                <Link onClick={() => handleNavClick("projects")} className="link">Projects</Link>|
-                <Link onClick={() => handleNavClick("contact")} className="link">Contact</Link> */}
                 <Button
               className="cv-button"
               href=""
