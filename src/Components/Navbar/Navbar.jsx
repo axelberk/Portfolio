@@ -59,7 +59,11 @@ const Navbar = () => {
             </IconButton>
             <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
                 <List className="drawer-list">
-                    <CloseIcon onClick={toggleDrawer(false)}></CloseIcon>
+                <div className="drawer-header">
+                    <IconButton onClick={toggleDrawer(false)} className="close-icon">
+                    <CloseIcon sx={{color:"#ccd6f6"}}/>
+                    </IconButton>
+                </div>
                     {links.map((link) => (
                         <ListItem button key={link.id} onClick={() => {handleNavClick(link.id); setDrawerOpen(false)}}>
                             <ListItemText primary={link.text}/>
