@@ -366,6 +366,10 @@
 }
 
 @media (max-width: 768px) {
+    .Homepage {
+        gap: 30px;
+    }
+
     .intro-section {
         display: flex;
         flex-direction: column;
@@ -412,5 +416,19 @@
         margin-bottom: 40px;
     }
 
+    .projects-container {
+    
+    }
+
+    .img-container {
+        width: 100%;
+    }
+
+    .project-left-text,
+    .project-right-text {
+      top: 0;
+      left: 0;
+      transform: 0;
+    }
     
 }
