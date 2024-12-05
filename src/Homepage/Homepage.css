@@ -400,35 +400,56 @@
         padding: 12px;
     }
 
+    .tech-stack-divider h2 {
+        font-size: 18px;
+    }
+
     .chips-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
         padding: 0px 50px;
     }
 
     .tooltip-text {
         bottom: -8px;
         z-index: 5;
-        left: 56px;
+        left: 30px;
+        font-size: 12px;
     }
 
     .stack-logo {
         margin-bottom: 40px;
-    }
-
-    .projects-container {
-    
+        height: 50px;
+        width: 50px;
     }
 
     .img-container {
         width: 100%;
     }
 
+    .project-left,
+    .project-right {
+        flex-direction: column;
+    }
+
     .project-left-text,
     .project-right-text {
       top: 0;
       left: 0;
-      transform: 0;
+      transform: none;
+    position:absolute;
+    display: inline-block;
+    width: 320px;
+   
     }
     
+    .project-left:hover .project-left-text,
+    .project-right:hover  .project-right-text {
+        transform: none;
+    }
+
+    .project-left:hover .img-overlay,
+    .project-right:hover .img-overlay {
+        opacity: 1;
+}
 }
