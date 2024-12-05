@@ -12,11 +12,24 @@
 
 .chip {
     box-shadow: 1px 1px 2px black;
+    display: inline-block;
+    height: auto;
     border-radius: 10px;
-    padding: 10px;
+    padding: 8px;
     font-size: 14px;
     background-color: aquamarine;
+    white-space: nowrap;
     color: black;
     font-weight: 400;
-    width: 100%px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    
+    .chip {
+        width: 100%px;
+        height: 15px;
+        font-size: 10px;
+        padding: 8px;
+    }
 }

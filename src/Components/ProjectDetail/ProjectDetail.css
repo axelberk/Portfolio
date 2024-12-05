@@ -76,3 +76,40 @@
     border: 1px solid #ccd6f6;
 }
 
+@media (max-width: 768px) {
+    .project-detail {
+        width: 100%;
+    }
+
+    .mobile-img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .s-text {
+        width: 200px;
+        gap: 0;
+    }
+
+    .s-container {
+        gap: 5px;
+    }
+
+    .s-container p {
+        font-size: 12px;
+    }
+
+    .made-with p {
+        margin-top: 0;
+    }
+
+    .stacks-used {
+        gap: 4px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    }
+
+    .project-links {
+        font-size: 12px;
+    }
+}
