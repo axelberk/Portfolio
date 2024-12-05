@@ -181,6 +181,10 @@
     animation-delay: 3s;
 }
 
+.about-container h1 {
+    margin-top: 0;
+}
+
 .about-description {
     font-size: 20px;
     text-align: left;

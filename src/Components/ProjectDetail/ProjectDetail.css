@@ -103,13 +103,18 @@
         margin-top: 0;
     }
 
-    .stacks-used {
+    .project-detail .stacks-used {
         gap: 4px;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        margin-bottom: 40px;
     }
 
     .project-links {
         font-size: 12px;
+    }
+
+    .project-link-button:after {
+       transition: none;
     }
 }

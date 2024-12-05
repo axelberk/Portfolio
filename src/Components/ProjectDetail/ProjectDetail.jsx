@@ -6,7 +6,12 @@ import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutl
 import TechStack from "../TechStack/TechStack";
 
     const ProjectDetail = ({title, description, mainImage, secondImage, stack, projectLink, projectGithub}) => {
-        const buttonStyle = { width:"130px", backgroundColor:"aquamarine", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit", transition: "all 0.4s ease", border:"1px solid transparent" };
+        const buttonStyle = { width: {
+            xs: "100px",
+            sm: "120px",
+            md: "130px"
+        }, 
+            backgroundColor:"aquamarine", color:"black", borderRadius:"10px", display:"flex", justifyContent:"space-between", font:"inherit", transition: "all 0.4s ease", border:"1px solid transparent" };
 
         const navigate = useNavigate()
 
@@ -17,7 +22,7 @@ import TechStack from "../TechStack/TechStack";
         return (
             <div className="project-detail">
                 <div className="button-and-title">
-                    <Button onClick={handleBackClick} className="back-button" variant="contained" sx={{width:"60px", height:"50px", backgroundColor:"aquamarine", color:"black", borderRadius:"10px"}}><ArrowBackIosNewOutlinedIcon/></Button>
+                    <Button onClick={handleBackClick} className="back-button" variant="contained" sx={{height:"40px", backgroundColor:"aquamarine", color:"black", borderRadius:"10px"}}><ArrowBackIosNewOutlinedIcon/></Button>
                     <h1>{title}</h1>
                     <div></div>
                 </div>
