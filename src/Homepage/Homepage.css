@@ -231,8 +231,6 @@
     font-size: 28px;
 }
 
-
-
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -448,13 +446,18 @@
 
     .project-left-text,
     .project-right-text {
-      top: 0;
-      left: 0;
-      transform: none;
-    position:absolute;
-    display: inline-block;
-    width: 80%;
-    z-index: 3;
+    top: 0;
+    left: 0;
+    transform: none;
+        position:absolute;
+        display: inline-block;
+        width: 90%;
+        z-index: 3;
+        height: 90%;
+        font-size: 12px;
+        text-align: left;
+        background-color: transparent;
+       
     }
     
     .project-left:hover .project-left-text,
@@ -466,4 +469,10 @@
     .project-right:hover .img-overlay {
         opacity: 1;
 }
+
+    .project-description-l {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
 }
