@@ -7,6 +7,8 @@ const projects = [
       image: "flagproject1.png",
       route: "/projects/countryfacts",
       stack: ["React", "JavaScript", "CSS", "Rest API", "Material UI"],
+      link: "https://countryfactbase.netlify.app/",
+      github:"https://github.com/axelberk/flagproject"
     },
     {
       id: "spotifyclone",
@@ -16,6 +18,8 @@ const projects = [
       image: "spotifyclone1.png",
       route: "/projects/spotifyclone",
       stack: ["React", "JavaScript", "Spotify API"],
+      link: "https://axelspotify.netlify.app/",
+      github: "https://github.com/axelberk/spotifyclone"
     },
     {
       id: "pwgen",
@@ -25,6 +29,8 @@ const projects = [
       image: "pw-gen1.png",
       route: "/projects/pwgen",
       stack: ["JavaScript", "HTML", "CSS"],
+      link:"https://randompw-gen.netlify.app/",
+      github:"https://github.com/axelberk/pwgen"
     },
     {
       id: "advicegen",
@@ -34,6 +40,8 @@ const projects = [
       image: "advicegen1.png",
       route: "/projects/advicegen",
       stack: ["JavaScript", "HTML", "CSS", "Rest API"],
+      link:"https://randomadvice-gen.netlify.app/",
+      github:"https://github.com/axelberk/advicegen"
     },
   ];
   

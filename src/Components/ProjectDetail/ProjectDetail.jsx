@@ -1,6 +1,6 @@
 import React from "react"
 import "./ProjectDetail.css"
-import { Button } from "@mui/material"
+import { Avatar, Button } from "@mui/material"
 import { useNavigate } from "react-router-dom"
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
 import TechStack from "../TechStack/TechStack";

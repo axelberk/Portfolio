@@ -10,7 +10,7 @@ import { useModal } from "../useModal";
 import MyTimeline from "../Components/Timeline/MyTimeline";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
-const Homepage = () => {
+const Homepage = (projectLink, projectGithub) => {
   const location = useLocation();
   const { handleNavClick, handleReadMore } = useNavigationHandlers(location);
   const { isModalOpen, openModal, closeModal } = useModal();
@@ -153,14 +153,18 @@ const Homepage = () => {
                 <h2 className="project-title">{project.title}</h2>
                 <h3 className="project-description-l">{project.description}</h3>
                 <TechStack stack={project.stack} />
-                <Button
-                  className="project-link-button"
-                  onClick={() => handleReadMore(project.route)}
-                  variant="contained"
-                  sx={buttonStyle}
-                >
-                  Read more
-                </Button>
+                <div className="project-links">
+                  <Button
+                    className="project-link-button"
+                    onClick={() => handleReadMore(project.route)}
+                    variant="contained"
+                    sx={buttonStyle}
+                  >
+                    Read more
+                  </Button>
+                  <a href={project.link} target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                  <a href={project.github} target="_blank"><img src="github.svg" alt="" /></a>
+                </div>
               </div>
             </div>
           </article>

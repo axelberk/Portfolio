@@ -446,18 +446,19 @@
 
     .project-left-text,
     .project-right-text {
-    top: 0;
-    left: 0;
-    transform: none;
+        top: 0;
+        left: 0;
+        transform: none;
         position:absolute;
         display: inline-block;
         width: 90%;
         z-index: 3;
-        height: 90%;
+        height: 87%;
         font-size: 12px;
         text-align: left;
-        background-color: transparent;
-       
+        background-color: rgba(17, 34, 64, 0.7);
+        display: inline-block;
+        
     }
     
     .project-left:hover .project-left-text,
