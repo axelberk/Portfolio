@@ -486,3 +486,32 @@
     }
 
 }
+
+@media (min-width:769px) and (max-width:1440px) {
+    .chips-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        
+    }
+
+    .tooltip-text {
+        bottom: -10px;
+        z-index: 5;
+        left: 56px;
+        font-size: 18px;
+    }
+
+    .stack-logo {
+        margin-bottom: 40px;
+        
+        
+    }
+}
+
+@media (min-width:1055px) and (max-width:1400px) {
+    .chips-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        
+    }
+}
