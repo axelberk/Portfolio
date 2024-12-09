@@ -163,7 +163,7 @@ const Homepage = (projectLink, projectGithub) => {
                     Read more
                   </Button>
                   <Button className="project-link-button" variant="outlined" href={project.link} target="_blank" sx={buttonStyle}><i class="fa fa-external-link" aria-hidden="true"></i></Button>
-                  <Button className="project-link-button" variant="outlined" href={project.github} target="_blank" sx={buttonStyle}><img src="github.svg" alt=""/></Button>
+                  <Button className="project-link-button" variant="outlined" href={project.github} target="_blank" sx={buttonStyle}><img src="github.svg" alt="" className="ext-link-img"/></Button>
                 </div>
               </div>
             </div>

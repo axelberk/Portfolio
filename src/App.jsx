@@ -74,7 +74,7 @@ function App() {
             element={
               <ProjectDetail
                 title="Advice Generator"
-                description="Random advice generated from a Rest API. Comes with a button to copy the quote to your clipboard and send to friends, family or colleagues to help motivate or inspire them."
+                description="Random advice generated from the Advice Slip Rest API. Comes with a button to copy the quote to your clipboard and send to friends, family or colleagues to help motivate or inspire them."
                 mainImage="/advicelaptop.png"
                 secondImage="/advicephone.png"
                 stack={["JavaScript", "HTML", "CSS", "Rest API"]}

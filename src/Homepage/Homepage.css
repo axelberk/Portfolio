@@ -343,6 +343,10 @@
     font-weight: 400;
 }
 
+.ext-link-img {
+    height: 20px;
+}
+
 .Contact {
     height: 150px;
     margin-bottom: 100px;
@@ -473,6 +477,10 @@
     .project-description-l {
         font-size: 16px;
         margin-top: 0;
+    }
+
+    .ext-link-img {
+        height: 16px;
     }
 
 }
