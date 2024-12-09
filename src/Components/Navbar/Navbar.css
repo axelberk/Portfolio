@@ -119,3 +119,11 @@
         display: block !important;
     }
 }
+
+@media (max-width: 870px) {
+    .Navbar {
+        max-width: 100%;
+        padding: 10px;
+        font-size: 20px;
+    }
+}

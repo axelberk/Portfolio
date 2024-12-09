@@ -506,6 +506,7 @@
         
         
     }
+
 }
 
 @media (min-width:1055px) and (max-width:1400px) {
@@ -515,3 +516,12 @@
         
     }
 }
+
+@media (min-width:500px) and (max-width:768px) {
+    .intro-section {
+        flex-direction: row;
+        
+    }
+}
+
+@media (max-width: 870px)
