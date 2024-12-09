@@ -76,6 +76,10 @@
     border: 1px solid #ccd6f6;
 }
 
+.ext-link-button:hover {
+    transform: scale(1.2);
+}
+
 @media (max-width: 768px) {
     .project-detail {
         width: 100%;
@@ -117,5 +121,9 @@
 
     .project-link-button:after {
        transition: none;
+    }
+
+    .ext-link-button:hover {
+        transform: none;
     }
 }
