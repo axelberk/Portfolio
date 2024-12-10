@@ -9,9 +9,10 @@ import ProjectDetail from "./Components/ProjectDetail/ProjectDetail";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      
 
       <div className="App">
+        <Navbar />
         <Routes>
           <Route
             path="/"

@@ -488,7 +488,29 @@
 }
 
 @media (min-width:769px) and (max-width:1476px) {
-    
+    .projects-container {
+        gap: 150px;
+    }
+
+    .img-container {
+        width: 60%;
+        position: relative;
+        height: auto;
+    }
+
+    .project-left-text,
+    .project-right-text {
+        width: auto;
+       
+    }
+
+    .project-left-text {
+        left: 300px;
+    }
+
+    .project-left:hover .project-left-text {
+        transform: translateX(60%);
+    }
 }
 
 @media (min-width:769px) and (max-width:1440px) {
@@ -501,7 +523,7 @@
     .tooltip-text {
         bottom: -10px;
         z-index: 5;
-        left: 56px;
+        left: 56%;
         font-size: 18px;
     }
 
@@ -529,5 +551,23 @@
 @media (min-width:1106px) and (max-width:1440px) {
     .chips-container {
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width:769px) and (max-width:1018px) {
+    .hero-name {
+        font-size: 34px;
+    }
+
+    .hero-profession {
+        font-size: 34px;
+    }
+
+    .hero-desc {
+        font-size: 16px;
+    }
+
+    .pfp {
+        height: 260px;
     }
 }
