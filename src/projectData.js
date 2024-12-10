@@ -36,7 +36,7 @@ const projects = [
       id: "advicegen",
       title: "Advice Generator",
       description:
-        "Randomly generate advice, and copy to spread if particularly inspired!",
+        "Randomly generate advice, and copy to send to others if you feel particularly inspired!",
       image: "advicegen1.png",
       route: "/projects/advicegen",
       stack: ["JavaScript", "HTML", "CSS", "Rest API"],
