@@ -653,3 +653,9 @@
     margin-bottom: 20px;
 }
 }
+
+@media (max-width:1024px) {
+    .ext-links img:hover {
+        transform: none;
+    }
+}
