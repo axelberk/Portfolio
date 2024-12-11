@@ -26,7 +26,7 @@ const projects = [
       title: "Password Generator",
       description:
         "Choose between four different criteria, randomly generate a password, and copy the result if desired.",
-      image: "pw-gen1.png",
+      image: "pwgen4.png",
       route: "/projects/pwgen",
       stack: ["JavaScript", "HTML", "CSS"],
       link:"https://randompw-gen.netlify.app/",
@@ -37,7 +37,7 @@ const projects = [
       title: "Advice Generator",
       description:
         "Randomly generate advice, and copy to send to others if you feel particularly inspired!",
-      image: "advicegen1.png",
+      image: "advicegen4.png",
       route: "/projects/advicegen",
       stack: ["JavaScript", "HTML", "CSS", "Rest API"],
       link:"https://randomadvice-gen.netlify.app/",
