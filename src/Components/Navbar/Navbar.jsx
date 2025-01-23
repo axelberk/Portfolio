@@ -71,7 +71,7 @@ const Navbar = () => {
                     ))}
                     <ListItem>
                         <a
-                        href="https://drive.google.com/file/d/1ZbgWsZMhwp8Laupttbq6CRecmfQ1coDX/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1nDOgWDyEyNTxWjbSqoWXdiQjXDPnRrQX/view?usp=sharing"
                         variant="contained"
                         target="_blank"
                         style={{ backgroundColor: "aquamarine", color: "#01003b", font: "inherit", borderRadius: "10px", padding:"6px", textDecoration:"none" }}
@@ -98,7 +98,7 @@ const Navbar = () => {
                 ))}
                 <a
               className="cv-button"
-              href="https://drive.google.com/file/d/1ZbgWsZMhwp8Laupttbq6CRecmfQ1coDX/view?usp=sharing"
+              href="https://drive.google.com/file/d/1nDOgWDyEyNTxWjbSqoWXdiQjXDPnRrQX/view?usp=sharing"
               variant="contained"
               target="_blank"
             >
