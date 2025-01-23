@@ -70,14 +70,14 @@ const Navbar = () => {
                         </ListItem>
                     ))}
                     <ListItem>
-                        <Button
-                        href=""
+                        <a
+                        href="https://drive.google.com/file/d/1ZbgWsZMhwp8Laupttbq6CRecmfQ1coDX/view?usp=sharing"
                         variant="contained"
                         target="_blank"
-                        style={{ backgroundColor: "aquamarine", color: "#01003b", font: "inherit", borderRadius: "10px" }}
+                        style={{ backgroundColor: "aquamarine", color: "#01003b", font: "inherit", borderRadius: "10px", padding:"6px", textDecoration:"none" }}
                         >
                             CV <i className="fa fa-external-link" aria-hidden="true"></i>
-                        </Button>
+                        </a>
                     </ListItem>
                 </List>
             </Drawer>
@@ -96,15 +96,15 @@ const Navbar = () => {
                         {link.text}
                     </Link>
                 ))}
-                <Button
+                <a
               className="cv-button"
-              href=""
+              href="https://drive.google.com/file/d/1ZbgWsZMhwp8Laupttbq6CRecmfQ1coDX/view?usp=sharing"
               variant="contained"
               target="_blank"
             >
               CV
               <i class="fa fa-external-link" aria-hidden="true"></i>
-            </Button>
+            </a>
             </div>
         </nav>  
     )
