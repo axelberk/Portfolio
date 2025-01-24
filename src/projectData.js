@@ -1,9 +1,9 @@
 const projects = [
     {
       id: "countryfacts",
-      title: "*CURRENTLY DOWN* Country Facts",
+      title: "Country Facts",
       description:
-        "This API is currently experiencing issues, so demo is unavailable.", /*Database of all the world's countries, with details for each and with filter functionality.*/
+        "Database of all the world's countries, with details for each and with filter functionality.",
       image: "flagproject1.png",
       route: "/projects/countryfacts",
       stack: ["React", "JavaScript", "CSS", "Rest API", "Material UI"],
